@@ -1,0 +1,5 @@
+{
+    "title" : "Switch - Set State",
+    "description" : "Toggle the isOn value of a switch.",
+    "code" : "MySwitch.isOn = false;"
+}

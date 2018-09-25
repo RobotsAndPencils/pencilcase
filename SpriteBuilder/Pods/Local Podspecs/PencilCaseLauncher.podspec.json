@@ -1,0 +1,75 @@
+{
+  "name": "PencilCaseLauncher",
+  "version": "1.0.0",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "summary": "A player that can launch and play PencilCase apps.",
+  "homepage": "https://robotsandpencils.com",
+  "authors": {
+    "Cody Rayment": "cody.rayment@robotsandpencils.com"
+  },
+  "source": {
+    "git": "git@github.com:RobotsAndPencils/PencilCase.git"
+  },
+  "requires_arc": true,
+  "frameworks": [
+    "WebKit",
+    "CoreBluetooth",
+    "SystemConfiguration",
+    "CFNetwork",
+    "Security",
+    "OpenAL"
+  ],
+  "libraries": [
+    "c++",
+    "icucore"
+  ],
+  "prefix_header_contents": "// Platform defines. TARGET_OS_MAC is defined on iOS so this makes it easier to detect iOS.\n#if TARGET_IPHONE_SIMULATOR\n#define PC_PLATFORM_IOS\n#elif TARGET_OS_IPHONE\n#define PC_PLATFORM_IOS\n#elif TARGET_OS_MAC\n#define PC_PLATFORM_MAC\n#endif\n\n#ifdef __OBJC__\n#import <UIKit/UIKit.h>\n#import <SpriteKit/SpriteKit.h>\n#import <PSAlertView/PSPDFAlertView.h>\n#import <PencilCaseLauncher/CommonUtils.h>\n\n#import <PencilCaseLauncher/CCBAnimationManager.h>\n#import <PencilCaseLauncher/CGPointUtilities.h>\n#import <PencilCaseLauncher/CCBuilderReader.h>\n#endif",
+  "ios": {
+    "vendored_frameworks": [
+      "PencilCaseLauncher/Frameworks/MyoKit.framework",
+      "PencilCaseLauncher/Frameworks/Firebase.framework"
+    ]
+  },
+  "source_files": [
+    "Shared Source/**/*.{h,m,c}",
+    "PencilCaseLauncher/Source/**/*.{h,m,c}"
+  ],
+  "resources": [
+    "PencilCaseLauncher/Assets/**/*.{png,js}",
+    "PencilCaseLauncher/Source/**/*.{xib}"
+  ],
+  "dependencies": {
+    "PSAlertView": [
+      "2.0.3"
+    ],
+    "RXCollections": [
+      "1.0"
+    ],
+    "SVProgressHUD": [
+      "1.1.2"
+    ],
+    "SSZipArchive": [
+      "0.3.2"
+    ],
+    "YapDatabase": [
+      "2.5.4"
+    ],
+    "BlocksKit/Core": [
+      "2.2.5"
+    ],
+    "ACEDrawingView": [
+      "1.3.5"
+    ],
+    "RPJSContext": [
+      "2.2.1"
+    ],
+    "JRSwizzle": [
+      "1.0"
+    ],
+    "GHMarkdownParser": [
+
+    ]
+  }
+}

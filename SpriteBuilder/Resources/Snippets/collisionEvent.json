@@ -1,0 +1,5 @@
+{
+    "title" : "Events - Collision",
+    "description" : "Adds an event handler for collision events with the two nodes passed as arguments.",
+    "code" : "Event.on('collisionStart', function(nodeA, nodeB) {\n\t// You can filter the collisions like so:\n\t// if (nodeA != instanceName && nodeB != instanceName) return;\n\t// Add your own code here\n});"
+}

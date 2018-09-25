@@ -1,0 +1,5 @@
+{
+    "title" : "Gestures - Tap",
+    "description" : "Adds a callback function called when a single tap occurs.",
+    "code" : "this.addTapRecognizerWithHandler(function(eventInfo) {\n});"
+}

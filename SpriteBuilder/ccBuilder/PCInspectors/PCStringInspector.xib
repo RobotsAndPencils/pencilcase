@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCStringInspector">
+            <connections>
+                <outlet property="textField" destination="2wa-Ph-XZJ" id="4iH-Rn-QK7"/>
+                <outlet property="titleTextField" destination="VjX-a7-JJm" id="Dqd-Hm-fzH"/>
+                <outlet property="view" destination="1gN-0o-4cj" id="z5D-9q-ozD"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1gN-0o-4cj">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VjX-a7-JJm">
+                    <rect key="frame" x="-2" y="6" width="41" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="E9X-dg-jOl"/>
+                        <constraint firstAttribute="height" constant="14" id="nbX-9U-Dms"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Detail" id="WKC-fP-7EQ">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-Ph-XZJ">
+                    <rect key="frame" x="40" y="4" width="217" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="qDl-6U-7x7">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.1739130435" green="0.1739130435" blue="0.1739130435" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="RLe-Ra-ZOy"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VjX-a7-JJm" firstAttribute="leading" secondItem="1gN-0o-4cj" secondAttribute="leading" id="7Ux-8T-1GG"/>
+                <constraint firstAttribute="trailing" secondItem="2wa-Ph-XZJ" secondAttribute="trailing" constant="3" id="7eS-2d-lFd"/>
+                <constraint firstItem="2wa-Ph-XZJ" firstAttribute="centerY" secondItem="VjX-a7-JJm" secondAttribute="centerY" constant="-0.5" id="XY1-aG-F4U"/>
+                <constraint firstItem="VjX-a7-JJm" firstAttribute="top" secondItem="1gN-0o-4cj" secondAttribute="top" constant="6" id="eCF-WG-WS2"/>
+                <constraint firstItem="2wa-Ph-XZJ" firstAttribute="leading" secondItem="VjX-a7-JJm" secondAttribute="trailing" constant="3" id="yny-vJ-cQn"/>
+            </constraints>
+            <point key="canvasLocation" x="88" y="155"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Jod-sF-dJr"/>
+    </objects>
+</document>

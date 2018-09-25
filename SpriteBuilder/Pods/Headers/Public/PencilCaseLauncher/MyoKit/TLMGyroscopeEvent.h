@@ -1,0 +1,1 @@
+../../../../../../PencilCaseLauncher/Frameworks/MyoKit.framework/Versions/A/Headers/TLMGyroscopeEvent.h

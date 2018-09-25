@@ -1,0 +1,1 @@
+../../../../../Source/Runtime/Categories/UIKit/UITapGestureRecognizer+PCGestureEquatable.h

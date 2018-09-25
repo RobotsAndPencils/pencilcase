@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Multi View</string>
+	<key>javaScriptClassName</key>
+	<string>MultiView</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string>Create a carousel or gallery.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<true/>
+	<key>requireChildClass</key>
+	<array>
+		<string>PCMultiViewCellNode</string>
+	</array>
+	<key>className</key>
+	<string>PCMultiViewNode</string>
+	<key>editorClassName</key>
+	<string>PCMultiViewNode</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCSKMultiViewNode</string>
+	<key>actionChangeableProperties</key>
+	<array>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>focusedViewIndex</string>
+					<key>displayName</key>
+					<string>Focused Cell</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Focused Cell</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>focusedViewIndex</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Multi View</string>
+			<key>name</key>
+			<string>Multi View</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Show Page Indicator</string>
+			<key>name</key>
+			<string>showPageIndicator</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>default</key>
+			<false/>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Current Page Indicator</string>
+			<key>name</key>
+			<string>currentPageIndicatorColor</string>
+			<key>type</key>
+			<string>Color3</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Page Indicator</string>
+			<key>name</key>
+			<string>pageIndicatorColor</string>
+			<key>type</key>
+			<string>Color3</string>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>focusedCellIndexOneBased</string>
+			</array>
+			<key>displayName</key>
+			<string>Focused View Index</string>
+			<key>name</key>
+			<string>focusedCellIndex</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>hidden</key>
+			<true/>
+			<key>scriptingInfo</key>
+			<dict>
+				<key>propertyName</key>
+				<string>focusedViewIndex</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>focusedCellIndex</string>
+				<string>focusedCellIndexOneBased</string>
+			</array>
+			<key>displayName</key>
+			<string>Focused view</string>
+			<key>name</key>
+			<string>focusedCellIndexOneBased</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>calculated</key>
+			<true/>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>300</integer>
+				<integer>300</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>MultiView</string>
+			<key>type</key>
+			<string>StringSimple</string>
+			<key>name</key>
+			<string>name</string>
+			<key>displayName</key>
+			<string>Name</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>Anchor point</string>
+		</dict>
+	</array>
+	<key>spriteFrameDrop</key>
+	<dict>
+		<key>className</key>
+		<string>PCSprite</string>
+		<key>property</key>
+		<string>spriteFrame</string>
+	</dict>
+</dict>
+</plist>

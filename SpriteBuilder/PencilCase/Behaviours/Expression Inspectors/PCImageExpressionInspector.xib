@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCImageExpressionInspector">
+            <connections>
+                <outlet property="popUpButton" destination="j4C-Dd-274" id="4Gc-p1-L2M"/>
+                <outlet property="view" destination="qMu-Iq-vMm" id="y8f-XE-85f"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="qMu-Iq-vMm">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j4C-Dd-274">
+                    <rect key="frame" x="6" y="5" width="212" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="ChR-l6-ugw">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="we8-Lk-rGM">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="Wjv-2a-a0a"/>
+                                <menuItem title="Item 2" id="14p-Lf-NNB"/>
+                                <menuItem title="Item 3" id="9rT-gs-Sbi"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="j4C-Dd-274" firstAttribute="leading" secondItem="qMu-Iq-vMm" secondAttribute="leading" constant="8" id="BT3-pX-syo"/>
+                <constraint firstAttribute="trailing" secondItem="j4C-Dd-274" secondAttribute="trailing" constant="8" id="Bse-RM-GR1"/>
+                <constraint firstItem="j4C-Dd-274" firstAttribute="top" secondItem="qMu-Iq-vMm" secondAttribute="top" constant="8" id="cjM-zz-w1H"/>
+                <constraint firstAttribute="bottom" secondItem="j4C-Dd-274" secondAttribute="bottom" constant="8" id="gYQ-XF-yEg"/>
+            </constraints>
+            <point key="canvasLocation" x="289.5" y="353"/>
+        </customView>
+    </objects>
+</document>

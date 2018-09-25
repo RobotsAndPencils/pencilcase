@@ -1,0 +1,1 @@
+../../../../../../Shared Source/Categories/NSString+MaxSize.h

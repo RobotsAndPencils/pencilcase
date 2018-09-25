@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AboutWindow">
+            <connections>
+                <outlet property="aboutTitle" destination="7TL-e7-Qbs" id="ktM-Ae-P65"/>
+                <outlet property="aboutView" destination="EME-2g-HTg" id="5MO-ED-dh1"/>
+                <outlet property="acknowledgementsContent" destination="Hn8-H6-zrx" id="KVb-YM-7pG"/>
+                <outlet property="acknowledgementsContentScrollView" destination="6wy-we-8nB" id="5eF-yZ-2sf"/>
+                <outlet property="acknowledgmentsTitle" destination="mQC-nv-X7s" id="nur-kS-aeI"/>
+                <outlet property="acknowledgmentsView" destination="wPH-6N-sfb" id="XMW-xA-b3h"/>
+                <outlet property="mainView" destination="b60-94-FrM" id="Jzh-fC-UB6"/>
+                <outlet property="versionLabel" destination="ENa-5z-EIb" id="dWT-2d-8EK"/>
+                <outlet property="versionTextLabel" destination="lj9-mV-FrY" id="1Gs-gz-M4W"/>
+                <outlet property="websiteButton" destination="6S9-I5-HyT" id="clo-4i-INM"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="About PencilCase" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="alertPanel" id="1" customClass="PCRecentsWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="637" height="391"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="637" height="391"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="b60-94-FrM">
+                        <rect key="frame" x="0.0" y="0.0" width="621" height="369"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+            <point key="canvasLocation" x="244.5" y="240.5"/>
+        </window>
+        <customView id="EME-2g-HTg">
+            <rect key="frame" x="0.0" y="0.0" width="606" height="321"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Wld-hl-EaV">
+                    <rect key="frame" x="0.0" y="-60" width="606" height="407"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="About_background" id="use-la-FHw"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="7TL-e7-Qbs">
+                    <rect key="frame" x="206" y="268" width="194" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="PencilCase" id="40Q-lM-TlY">
+                        <font key="font" metaFont="system" size="30"/>
+                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lj9-mV-FrY">
+                    <rect key="frame" x="176" y="157" width="72" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version:" id="M1f-Su-oXI">
+                        <font key="font" metaFont="systemBold" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ENa-5z-EIb">
+                    <rect key="frame" x="245" y="162" width="348" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="#" id="I1c-og-oND">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="iQI-PT-bS3">
+                    <rect key="frame" x="370" y="20" width="166" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Acknowledgements_button" imagePosition="overlaps" alignment="center" alternateImage="Acknowledgements_button_on" imageScaling="proportionallyDown" inset="2" id="o1M-lG-siw">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showAcknowledgementsView:" target="-2" id="flo-fj-XpM"/>
+                    </connections>
+                </button>
+                <button id="6S9-I5-HyT" customClass="PCLinkButton">
+                    <rect key="frame" x="178" y="125" width="294" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" title="https://github.com/robotsandpencils/pencilcase" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="zY5-QG-vwM">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openWebsite:" target="-2" id="xhq-hM-u2R"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ke7-TQ-Jo1">
+                    <rect key="frame" x="20" y="83" width="145" height="146"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="About_icon" id="oCu-gr-Adk"/>
+                </imageView>
+                <button id="AcP-j6-psW">
+                    <rect key="frame" x="-3" y="276" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Close_Recents_Icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="84a-bB-ZDc">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeWidow:" target="-2" id="F3m-ph-FDm"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="F7X-Sz-yXH">
+                    <rect key="frame" x="543" y="16" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="About_heart_icon" id="M0r-H1-8J5"/>
+                </imageView>
+            </subviews>
+            <point key="canvasLocation" x="244" y="649.5"/>
+        </customView>
+        <customView id="wPH-6N-sfb">
+            <rect key="frame" x="0.0" y="0.0" width="606" height="356"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ED9-Yh-3FG">
+                    <rect key="frame" x="0.0" y="-25" width="606" height="407"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="About_background" id="BeV-rD-YhR"/>
+                </imageView>
+                <button id="rvc-vi-p2v">
+                    <rect key="frame" x="-3" y="311" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Close_Recents_Icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="nSO-2z-3iX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeWidow:" target="-2" id="ui4-bV-Kaa"/>
+                    </connections>
+                </button>
+                <button id="83F-0E-Jkj">
+                    <rect key="frame" x="418" y="21" width="166" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Back_button" imagePosition="overlaps" alignment="center" alternateImage="Back_button_on" imageScaling="proportionallyDown" inset="2" id="q2F-bV-PtB">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="backToAboutView:" target="-2" id="rAo-FE-0le"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="mQC-nv-X7s">
+                    <rect key="frame" x="132" y="303" width="342" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Acknowledgments" id="viP-UQ-5zG">
+                        <font key="font" metaFont="system" size="30"/>
+                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="6wy-we-8nB">
+                    <rect key="frame" x="23" y="77" width="560" height="203"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <clipView key="contentView" copiesOnScroll="NO" id="KCO-JK-w4D">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="203"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="Hn8-H6-zrx">
+                                <rect key="frame" x="0.0" y="0.0" width="560" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" controlSize="mini" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" allowsEditingTextAttributes="YES" id="NjR-IW-yBH">
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <string key="title">SpriteBuilder:
+
+Copyright 2013 Apportable inc
+Copyright 2012-2013 Zynga inc
+Copyright 2011 Viktor Lidholt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+                                    <color key="textColor" red="0.031372550870000002" green="0.0039215688589999999" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="PV5-6n-BJt">
+                        <rect key="frame" x="0.0" y="187" width="560" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Gv2-oc-v83">
+                        <rect key="frame" x="544" y="0.0" width="16" height="203"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <point key="canvasLocation" x="918" y="667"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="About_background" width="606" height="356"/>
+        <image name="About_heart_icon" width="30" height="26"/>
+        <image name="About_icon" width="145" height="146"/>
+        <image name="Acknowledgements_button" width="166" height="38"/>
+        <image name="Acknowledgements_button_on" width="166" height="38"/>
+        <image name="Back_button" width="166" height="38"/>
+        <image name="Back_button_on" width="166" height="38"/>
+        <image name="Close_Recents_Icon" width="18" height="18"/>
+    </resources>
+</document>

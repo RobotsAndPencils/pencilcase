@@ -1,0 +1,12 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(SDKROOT)/Developer/Library/Frameworks $(inherited) $(DEVELOPER_FRAMEWORKS_DIR) "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+FRAMEWORK_SEARCH_PATHS[sdk=iphoneos8.0] = $(inherited) $(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/Frameworks
+FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator8.0] = $(inherited) $(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 XCODE_VERSION=$(XCODE_VERSION_MAJOR)
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ACEDrawingView" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/GHMarkdownParser" "${PODS_ROOT}/Headers/Public/JRSwizzle" "${PODS_ROOT}/Headers/Public/Kiwi" "${PODS_ROOT}/Headers/Public/OHHTTPStubs" "${PODS_ROOT}/Headers/Public/PSAlertView" "${PODS_ROOT}/Headers/Public/PencilCaseLauncher" "${PODS_ROOT}/Headers/Public/RPJSContext" "${PODS_ROOT}/Headers/Public/RXCollections" "${PODS_ROOT}/Headers/Public/SSZipArchive" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/YapDatabase"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kiwi" "${PODS_CONFIGURATION_BUILD_DIR}/OHHTTPStubs"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ACEDrawingView" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/Public/GHMarkdownParser" -isystem "${PODS_ROOT}/Headers/Public/JRSwizzle" -isystem "${PODS_ROOT}/Headers/Public/Kiwi" -isystem "${PODS_ROOT}/Headers/Public/OHHTTPStubs" -isystem "${PODS_ROOT}/Headers/Public/PSAlertView" -isystem "${PODS_ROOT}/Headers/Public/PencilCaseLauncher" -isystem "${PODS_ROOT}/Headers/Public/RPJSContext" -isystem "${PODS_ROOT}/Headers/Public/RXCollections" -isystem "${PODS_ROOT}/Headers/Public/SSZipArchive" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/YapDatabase"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Kiwi" -l"OHHTTPStubs" -framework "CFNetwork" -framework "Foundation" -framework "XCTest"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

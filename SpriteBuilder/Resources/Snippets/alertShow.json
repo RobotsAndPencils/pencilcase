@@ -1,0 +1,5 @@
+{
+    "title" : "Show Alert",
+    "description" : "Shows an alert with a title, message and OK button.",
+    "code" : "Alert.showAlert('Title', 'This is the message.', function() {\n  // OK button callback\n});"
+}

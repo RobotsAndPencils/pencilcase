@@ -1,0 +1,5 @@
+{
+    "title" : "Switch - Bind to State",
+    "description" : "Bind to the isOn state of a switch.",
+    "code" : "MySwitch.bind('isOn', MyLabel, 'string', function(value) {\n    return value == 'On' ? true : false;\n}, function(value) {\n    return value ? 'On' : 'Off';\n});"
+}

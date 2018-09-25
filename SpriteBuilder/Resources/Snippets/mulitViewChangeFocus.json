@@ -1,0 +1,5 @@
+{
+    "title" : "Multi View - Change Focus",
+    "description" : "Set the 0 based focused index of the Multi View",
+    "code" : "MyMultiView.focusedViewIndex = 1;"
+}

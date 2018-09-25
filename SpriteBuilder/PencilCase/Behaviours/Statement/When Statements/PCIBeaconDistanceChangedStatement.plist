@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>representationTemplate</key>
+	<string>Event.on(&apos;iBeaconChangedProximity&apos;, function({{{ exposedTokens }}}) {\nif (!{{{ beaconExpression }}}.isEqual(arguments[0]) || arguments[1] !== {{{ distanceExpression }}}) return;\n{{{ thens }}}\n})</string>
+	<key>analyticsString</key>
+	<string>When iBeacon Distance Changes</string>
+</dict>
+</plist>

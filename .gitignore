@@ -1,0 +1,37 @@
+.DS_Store
+
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+DerivedData/
+xcuserdata/
+*.xccheckout
+
+# build products
+build/
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Private keys
+*priv.pem
+
+*.ccbresourcelog
+Version.txt
+RBKPROJECTNAME.zip
+
+# AppCode
+.idea
+
+SpriteBuilder/fastlane/report.xml
+private_env.sh

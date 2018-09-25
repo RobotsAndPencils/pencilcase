@@ -1,0 +1,51 @@
+# Customise this file, documentation can be found here: 
+# https://github.com/krausefx/fastlane#customise-the-fastfile
+
+before_all do
+end
+
+lane :staging do 
+  build_number = hockey_build_number(
+    token: ENV['HOCKEY_TOKEN'],
+    app_id: 'ad9b84c45140db222b367b6c772ed829'
+  )
+  UI.crash!("Failed to find build number") unless build_number
+  
+  sh "./RBKBuildDistribution.sh 'Release Staging' #{build_number + 1}"
+  sh './RBKCodeSign.sh'
+
+  hockey({
+    api_token: ENV['HOCKEY_TOKEN'],
+    public_identifier: "ad9b84c45140db222b367b6c772ed829",
+    ipa: '../build/PencilCase.app.zip',
+    dsym: '../build/PencilCase.app.dSYM.zip',
+    notify: "0"
+  })
+end
+
+lane :production do
+  build_number = hockey_build_number(
+    token: ENV['HOCKEY_TOKEN'],
+    app_id: '7ce875fb8bb1dffe856649e8f8d36135'
+  )
+  UI.crash!("Failed to find build number") unless build_number
+
+  sh "./RBKBuildDistribution.sh 'Release Prod' #{build_number + 1}"
+  sh './RBKCodeSign.sh'
+
+  hockey({
+    api_token: ENV['HOCKEY_TOKEN'],
+    public_identifier: "7ce875fb8bb1dffe856649e8f8d36135",
+    ipa: '../build/PencilCase.app.zip',
+    dsym: '../build/PencilCase.app.dSYM.zip',
+    notify: "0",
+    status: "1"
+  })
+end
+
+after_all do |lane|
+end
+
+error do |lane, exception|
+  # Something bad happened
+end

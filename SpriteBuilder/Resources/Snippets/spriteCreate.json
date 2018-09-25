@@ -1,0 +1,5 @@
+{
+    "title" : "Image - Create",
+    "description" : "Adds a new sprite and adds it to the slide.",
+    "code" : "var image = Image.imageViewWithName('imageName');\nimage.position = { x: 50.0, y: 50.0 };\nCard.addChild(image);"
+}

@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF600521A1FA27900C540BC /* PCAppViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF600511A1FA27900C540BC /* PCAppViewControllerTests.m */; };
+		3F4A74C619E7875C008FB49A /* Sample.creation in Resources */ = {isa = PBXBuildFile; fileRef = 3F4A74C519E7875C008FB49A /* Sample.creation */; };
+		3F63803A1B0BBA8F00FB7545 /* test_creation.creation in Resources */ = {isa = PBXBuildFile; fileRef = 3F6380391B0BBA8F00FB7545 /* test_creation.creation */; };
+		3F63803C1B0BCACA00FB7545 /* PCLRetainCycleIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F63803B1B0BCACA00FB7545 /* PCLRetainCycleIntegrationTests.m */; };
+		3FAFDF071A0977B100A8B181 /* SKNode+LifeCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAFDF061A0977B100A8B181 /* SKNode+LifeCycleTests.m */; };
+		835931C834DD94EA90E513A0 /* PCCameraCaptureNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83593A6297EB42A0E5D15F86 /* PCCameraCaptureNodeTests.m */; };
+		83593293895731B64EC89BA4 /* CCBAnimationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8359385307954C063F37B8F9 /* CCBAnimationManagerTests.m */; };
+		835932D6E133E693FEAB1053 /* PCSlideNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 835932749E9F967FFDE1BB81 /* PCSlideNodeTests.m */; };
+		835933094CCD103BA9DB9C90 /* PCMultiViewNodeEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83593BB795F61CEE2CF440F4 /* PCMultiViewNodeEventTests.m */; };
+		83593423B229AB3C06666B2C /* PCSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 835938F03CF7FB8E93521956 /* PCSwitchTests.m */; };
+		83593457958F571CBA22D7FC /* UIGestureRecognizerJSEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83593152DDF5E33FBCF696CB /* UIGestureRecognizerJSEventsTests.m */; };
+		835934FD7381E72FDC7A442C /* PCBeaconManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8359353AB4CFEF7F988BB414 /* PCBeaconManagerTests.m */; };
+		835935FE947EA9776E7CC354 /* PCButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83593609B3418A3BA196C31A /* PCButtonTests.m */; };
+		8359361BF7AC808EBA0125BC /* PCAppTransitionControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8359399D3EFC383073592CF6 /* PCAppTransitionControllerTests.m */; };
+		83593625CE92BA9EF3908928 /* PCSlideNodeContextEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83593F7614F3CF2DBBFB472C /* PCSlideNodeContextEventTests.m */; };
+		8359394C46F7182393CF1C34 /* PCSliderNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8359349B0E9D92D4F63CA105 /* PCSliderNodeTests.m */; };
+		83593C1AF08071F2BD978F51 /* PCGestureEquatableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 835939BE2106155ACB7905BB /* PCGestureEquatableTests.m */; };
+		9DC860E96BC0CED21D4F0CD9 /* libPods-PencilCaseLauncherDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2888FDDC9C6BC54FD9AE6EEA /* libPods-PencilCaseLauncherDemoTests.a */; };
+		BC0798511AA12082005CA42E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BC07984F1AA11FC4005CA42E /* testImage.png */; };
+		BC0A48F21B3B4A890097AF29 /* PCCoordinateConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0A48F11B3B4A890097AF29 /* PCCoordinateConversionTests.m */; };
+		BCEE05F71AA10E680039B2A6 /* SFGestureRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE05F61AA10E680039B2A6 /* SFGestureRecognizerTests.m */; };
+		CA00D3401A435A810011A42F /* PCTableNodeEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA00D33F1A435A810011A42F /* PCTableNodeEventTests.m */; };
+		CA2B49B41A42477A00C33C95 /* PCSlideNodeContactDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2B49B31A42477A00C33C95 /* PCSlideNodeContactDelegateTests.m */; };
+		CA5BD8061A422B1E00855918 /* PCJSContextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5BD8051A422B1E00855918 /* PCJSContextTests.m */; };
+		CA82D26319D1F8C500104A41 /* SKNodeTouchRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA82D26219D1F8C500104A41 /* SKNodeTouchRecognizerTests.m */; };
+		D45DFC0C90D2452326A720A5 /* libPods-PencilCaseLauncherDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8BD92591716C5C6193F39C /* libPods-PencilCaseLauncherDemo.a */; };
+		DADBE74019A28F1B00E1A4EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBE73F19A28F1B00E1A4EA /* Foundation.framework */; };
+		DADBE74219A28F1B00E1A4EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBE74119A28F1B00E1A4EA /* CoreGraphics.framework */; };
+		DADBE74419A28F1B00E1A4EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBE74319A28F1B00E1A4EA /* UIKit.framework */; };
+		DADBE74A19A28F1B00E1A4EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DADBE74819A28F1B00E1A4EA /* InfoPlist.strings */; };
+		DADBE74C19A28F1B00E1A4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADBE74B19A28F1B00E1A4EA /* main.m */; };
+		DADBE75019A28F1B00E1A4EA /* PCLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADBE74F19A28F1B00E1A4EA /* PCLAppDelegate.m */; };
+		DADBE75219A28F1B00E1A4EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBE75119A28F1B00E1A4EA /* Images.xcassets */; };
+		DADBE75919A28F1B00E1A4EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBE75819A28F1B00E1A4EA /* XCTest.framework */; };
+		DADBE75A19A28F1B00E1A4EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBE73F19A28F1B00E1A4EA /* Foundation.framework */; };
+		DADBE75B19A28F1B00E1A4EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBE74319A28F1B00E1A4EA /* UIKit.framework */; };
+		DADBE76319A28F1B00E1A4EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DADBE76119A28F1B00E1A4EA /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DADBE75C19A28F1B00E1A4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DADBE73419A28F1B00E1A4EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADBE73B19A28F1B00E1A4EA;
+			remoteInfo = PencilCaseLauncherDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026DAF46504DCDB0167D2A43 /* Pods-PencilCaseLauncherDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PencilCaseLauncherDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PencilCaseLauncherDemoTests/Pods-PencilCaseLauncherDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2888FDDC9C6BC54FD9AE6EEA /* libPods-PencilCaseLauncherDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PencilCaseLauncherDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF600511A1FA27900C540BC /* PCAppViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCAppViewControllerTests.m; sourceTree = "<group>"; };
+		383B5FF11CB4D9829F2600E5 /* Pods-PencilCaseLauncherDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PencilCaseLauncherDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PencilCaseLauncherDemoTests/Pods-PencilCaseLauncherDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F4A74C519E7875C008FB49A /* Sample.creation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sample.creation; sourceTree = "<group>"; };
+		3F6380391B0BBA8F00FB7545 /* test_creation.creation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test_creation.creation; path = PencilCaseLauncherDemo/test_creation.creation; sourceTree = SOURCE_ROOT; };
+		3F63803B1B0BCACA00FB7545 /* PCLRetainCycleIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLRetainCycleIntegrationTests.m; sourceTree = "<group>"; };
+		3FAFDF061A0977B100A8B181 /* SKNode+LifeCycleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+LifeCycleTests.m"; sourceTree = "<group>"; };
+		3FE0860719BA4DB700B36D29 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B9EAD1AB88C0BB2EC006AC8 /* Pods-PencilCaseLauncherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PencilCaseLauncherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PencilCaseLauncherDemo/Pods-PencilCaseLauncherDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		83593152DDF5E33FBCF696CB /* UIGestureRecognizerJSEventsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGestureRecognizerJSEventsTests.m; sourceTree = "<group>"; };
+		835932749E9F967FFDE1BB81 /* PCSlideNodeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSlideNodeTests.m; sourceTree = "<group>"; };
+		8359349B0E9D92D4F63CA105 /* PCSliderNodeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSliderNodeTests.m; sourceTree = "<group>"; };
+		8359353AB4CFEF7F988BB414 /* PCBeaconManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCBeaconManagerTests.m; sourceTree = "<group>"; };
+		83593609B3418A3BA196C31A /* PCButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCButtonTests.m; sourceTree = "<group>"; };
+		8359385307954C063F37B8F9 /* CCBAnimationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBAnimationManagerTests.m; sourceTree = "<group>"; };
+		835938F03CF7FB8E93521956 /* PCSwitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSwitchTests.m; sourceTree = "<group>"; };
+		8359399D3EFC383073592CF6 /* PCAppTransitionControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCAppTransitionControllerTests.m; sourceTree = "<group>"; };
+		835939BE2106155ACB7905BB /* PCGestureEquatableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGestureEquatableTests.m; sourceTree = "<group>"; };
+		83593A6297EB42A0E5D15F86 /* PCCameraCaptureNodeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCameraCaptureNodeTests.m; sourceTree = "<group>"; };
+		83593BB795F61CEE2CF440F4 /* PCMultiViewNodeEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMultiViewNodeEventTests.m; sourceTree = "<group>"; };
+		83593F7614F3CF2DBBFB472C /* PCSlideNodeContextEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSlideNodeContextEventTests.m; sourceTree = "<group>"; };
+		8E98E770C8710EDF9A874F36 /* Pods-PencilCaseLauncherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PencilCaseLauncherDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PencilCaseLauncherDemo/Pods-PencilCaseLauncherDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BC07984F1AA11FC4005CA42E /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testImage.png; path = ../PencilCaseLauncherDemo/testImage.png; sourceTree = "<group>"; };
+		BC0A48F11B3B4A890097AF29 /* PCCoordinateConversionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCoordinateConversionTests.m; sourceTree = "<group>"; };
+		BC7A4EF01A36A60F00DF678F /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		BCEE05F61AA10E680039B2A6 /* SFGestureRecognizerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFGestureRecognizerTests.m; sourceTree = "<group>"; };
+		CA00D33F1A435A810011A42F /* PCTableNodeEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTableNodeEventTests.m; sourceTree = "<group>"; };
+		CA2B49B31A42477A00C33C95 /* PCSlideNodeContactDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSlideNodeContactDelegateTests.m; sourceTree = "<group>"; };
+		CA5BD8051A422B1E00855918 /* PCJSContextTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCJSContextTests.m; sourceTree = "<group>"; };
+		CA82D26219D1F8C500104A41 /* SKNodeTouchRecognizerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNodeTouchRecognizerTests.m; sourceTree = "<group>"; };
+		CE8BD92591716C5C6193F39C /* libPods-PencilCaseLauncherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PencilCaseLauncherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBE73C19A28F1B00E1A4EA /* PencilCaseLauncherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PencilCaseLauncherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBE73F19A28F1B00E1A4EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DADBE74119A28F1B00E1A4EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DADBE74319A28F1B00E1A4EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DADBE74719A28F1B00E1A4EA /* PencilCaseLauncherDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PencilCaseLauncherDemo-Info.plist"; sourceTree = "<group>"; };
+		DADBE74919A28F1B00E1A4EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DADBE74B19A28F1B00E1A4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DADBE74D19A28F1B00E1A4EA /* PencilCaseLauncherDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PencilCaseLauncherDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DADBE74E19A28F1B00E1A4EA /* PCLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCLAppDelegate.h; sourceTree = "<group>"; };
+		DADBE74F19A28F1B00E1A4EA /* PCLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCLAppDelegate.m; sourceTree = "<group>"; };
+		DADBE75119A28F1B00E1A4EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DADBE75719A28F1B00E1A4EA /* PencilCaseLauncherDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilCaseLauncherDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBE75819A28F1B00E1A4EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DADBE76019A28F1B00E1A4EA /* PencilCaseLauncherDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PencilCaseLauncherDemoTests-Info.plist"; sourceTree = "<group>"; };
+		DADBE76219A28F1B00E1A4EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADBE73919A28F1B00E1A4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBE74219A28F1B00E1A4EA /* CoreGraphics.framework in Frameworks */,
+				DADBE74419A28F1B00E1A4EA /* UIKit.framework in Frameworks */,
+				DADBE74019A28F1B00E1A4EA /* Foundation.framework in Frameworks */,
+				D45DFC0C90D2452326A720A5 /* libPods-PencilCaseLauncherDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADBE75419A28F1B00E1A4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBE75919A28F1B00E1A4EA /* XCTest.framework in Frameworks */,
+				DADBE75B19A28F1B00E1A4EA /* UIKit.framework in Frameworks */,
+				DADBE75A19A28F1B00E1A4EA /* Foundation.framework in Frameworks */,
+				9DC860E96BC0CED21D4F0CD9 /* libPods-PencilCaseLauncherDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DCA120D6ED7A2350F950BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B9EAD1AB88C0BB2EC006AC8 /* Pods-PencilCaseLauncherDemo.debug.xcconfig */,
+				8E98E770C8710EDF9A874F36 /* Pods-PencilCaseLauncherDemo.release.xcconfig */,
+				026DAF46504DCDB0167D2A43 /* Pods-PencilCaseLauncherDemoTests.debug.xcconfig */,
+				383B5FF11CB4D9829F2600E5 /* Pods-PencilCaseLauncherDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DADBE73319A28F1B00E1A4EA = {
+			isa = PBXGroup;
+			children = (
+				3FE0860719BA4DB700B36D29 /* Podfile */,
+				DADBE74519A28F1B00E1A4EA /* PencilCaseLauncherDemo */,
+				DADBE75E19A28F1B00E1A4EA /* PencilCaseLauncherDemoTests */,
+				DADBE73E19A28F1B00E1A4EA /* Frameworks */,
+				DADBE73D19A28F1B00E1A4EA /* Products */,
+				22DCA120D6ED7A2350F950BE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DADBE73D19A28F1B00E1A4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADBE73C19A28F1B00E1A4EA /* PencilCaseLauncherDemo.app */,
+				DADBE75719A28F1B00E1A4EA /* PencilCaseLauncherDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADBE73E19A28F1B00E1A4EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A4EF01A36A60F00DF678F /* libPods.a */,
+				DADBE73F19A28F1B00E1A4EA /* Foundation.framework */,
+				DADBE74119A28F1B00E1A4EA /* CoreGraphics.framework */,
+				DADBE74319A28F1B00E1A4EA /* UIKit.framework */,
+				DADBE75819A28F1B00E1A4EA /* XCTest.framework */,
+				CE8BD92591716C5C6193F39C /* libPods-PencilCaseLauncherDemo.a */,
+				2888FDDC9C6BC54FD9AE6EEA /* libPods-PencilCaseLauncherDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DADBE74519A28F1B00E1A4EA /* PencilCaseLauncherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DADBE74E19A28F1B00E1A4EA /* PCLAppDelegate.h */,
+				DADBE74F19A28F1B00E1A4EA /* PCLAppDelegate.m */,
+				DADBE75119A28F1B00E1A4EA /* Images.xcassets */,
+				DADBE74619A28F1B00E1A4EA /* Supporting Files */,
+			);
+			path = PencilCaseLauncherDemo;
+			sourceTree = "<group>";
+		};
+		DADBE74619A28F1B00E1A4EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A74C519E7875C008FB49A /* Sample.creation */,
+				DADBE74719A28F1B00E1A4EA /* PencilCaseLauncherDemo-Info.plist */,
+				DADBE74819A28F1B00E1A4EA /* InfoPlist.strings */,
+				DADBE74B19A28F1B00E1A4EA /* main.m */,
+				DADBE74D19A28F1B00E1A4EA /* PencilCaseLauncherDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DADBE75E19A28F1B00E1A4EA /* PencilCaseLauncherDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC07984F1AA11FC4005CA42E /* testImage.png */,
+				2CF600511A1FA27900C540BC /* PCAppViewControllerTests.m */,
+				DADBE75F19A28F1B00E1A4EA /* Supporting Files */,
+				CA82D26219D1F8C500104A41 /* SKNodeTouchRecognizerTests.m */,
+				3FAFDF061A0977B100A8B181 /* SKNode+LifeCycleTests.m */,
+				CA5BD8051A422B1E00855918 /* PCJSContextTests.m */,
+				CA2B49B31A42477A00C33C95 /* PCSlideNodeContactDelegateTests.m */,
+				CA00D33F1A435A810011A42F /* PCTableNodeEventTests.m */,
+				83593F7614F3CF2DBBFB472C /* PCSlideNodeContextEventTests.m */,
+				83593BB795F61CEE2CF440F4 /* PCMultiViewNodeEventTests.m */,
+				835939BE2106155ACB7905BB /* PCGestureEquatableTests.m */,
+				83593152DDF5E33FBCF696CB /* UIGestureRecognizerJSEventsTests.m */,
+				8359385307954C063F37B8F9 /* CCBAnimationManagerTests.m */,
+				835932749E9F967FFDE1BB81 /* PCSlideNodeTests.m */,
+				83593A6297EB42A0E5D15F86 /* PCCameraCaptureNodeTests.m */,
+				83593609B3418A3BA196C31A /* PCButtonTests.m */,
+				835938F03CF7FB8E93521956 /* PCSwitchTests.m */,
+				8359349B0E9D92D4F63CA105 /* PCSliderNodeTests.m */,
+				8359353AB4CFEF7F988BB414 /* PCBeaconManagerTests.m */,
+				BCEE05F61AA10E680039B2A6 /* SFGestureRecognizerTests.m */,
+				3F63803B1B0BCACA00FB7545 /* PCLRetainCycleIntegrationTests.m */,
+				8359399D3EFC383073592CF6 /* PCAppTransitionControllerTests.m */,
+				BC0A48F11B3B4A890097AF29 /* PCCoordinateConversionTests.m */,
+			);
+			path = PencilCaseLauncherDemoTests;
+			sourceTree = "<group>";
+		};
+		DADBE75F19A28F1B00E1A4EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F6380391B0BBA8F00FB7545 /* test_creation.creation */,
+				DADBE76019A28F1B00E1A4EA /* PencilCaseLauncherDemoTests-Info.plist */,
+				DADBE76119A28F1B00E1A4EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADBE73B19A28F1B00E1A4EA /* PencilCaseLauncherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADBE76819A28F1B00E1A4EA /* Build configuration list for PBXNativeTarget "PencilCaseLauncherDemo" */;
+			buildPhases = (
+				B2ACD6D26BDAFA6D0659F900 /* [CP] Check Pods Manifest.lock */,
+				DADBE73819A28F1B00E1A4EA /* Sources */,
+				DADBE73919A28F1B00E1A4EA /* Frameworks */,
+				DADBE73A19A28F1B00E1A4EA /* Resources */,
+				C1082C9A624AE29760C1A85B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PencilCaseLauncherDemo;
+			productName = PencilCaseLauncherDemo;
+			productReference = DADBE73C19A28F1B00E1A4EA /* PencilCaseLauncherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DADBE75619A28F1B00E1A4EA /* PencilCaseLauncherDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADBE76B19A28F1B00E1A4EA /* Build configuration list for PBXNativeTarget "PencilCaseLauncherDemoTests" */;
+			buildPhases = (
+				E25AE669117A1E8DAACFF1BD /* [CP] Check Pods Manifest.lock */,
+				DADBE75319A28F1B00E1A4EA /* Sources */,
+				DADBE75419A28F1B00E1A4EA /* Frameworks */,
+				DADBE75519A28F1B00E1A4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DADBE75D19A28F1B00E1A4EA /* PBXTargetDependency */,
+			);
+			name = PencilCaseLauncherDemoTests;
+			productName = PencilCaseLauncherDemoTests;
+			productReference = DADBE75719A28F1B00E1A4EA /* PencilCaseLauncherDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADBE73419A28F1B00E1A4EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PCL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Robots & Pencils";
+				TargetAttributes = {
+					DADBE73B19A28F1B00E1A4EA = {
+						DevelopmentTeam = 9729852L3Y;
+						ProvisioningStyle = Manual;
+					};
+					DADBE75619A28F1B00E1A4EA = {
+						DevelopmentTeam = 9729852L3Y;
+						ProvisioningStyle = Manual;
+						TestTargetID = DADBE73B19A28F1B00E1A4EA;
+					};
+				};
+			};
+			buildConfigurationList = DADBE73719A28F1B00E1A4EA /* Build configuration list for PBXProject "PencilCaseLauncherDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DADBE73319A28F1B00E1A4EA;
+			productRefGroup = DADBE73D19A28F1B00E1A4EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADBE73B19A28F1B00E1A4EA /* PencilCaseLauncherDemo */,
+				DADBE75619A28F1B00E1A4EA /* PencilCaseLauncherDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DADBE73A19A28F1B00E1A4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBE74A19A28F1B00E1A4EA /* InfoPlist.strings in Resources */,
+				DADBE75219A28F1B00E1A4EA /* Images.xcassets in Resources */,
+				3F4A74C619E7875C008FB49A /* Sample.creation in Resources */,
+				BC0798511AA12082005CA42E /* testImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADBE75519A28F1B00E1A4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBE76319A28F1B00E1A4EA /* InfoPlist.strings in Resources */,
+				3F63803A1B0BBA8F00FB7545 /* test_creation.creation in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2ACD6D26BDAFA6D0659F900 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PencilCaseLauncherDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1082C9A624AE29760C1A85B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PencilCaseLauncherDemo/Pods-PencilCaseLauncherDemo-resources.sh",
+				"${PODS_ROOT}/GHMarkdownParser/discount/blocktags",
+				"${PODS_ROOT}/../../Assets/bind.js",
+				"${PODS_ROOT}/../../Assets/CameraIcon.png",
+				"${PODS_ROOT}/../../Assets/CameraIcon@2x.png",
+				"${PODS_ROOT}/../../Assets/co.js",
+				"${PODS_ROOT}/../../Assets/creation.js",
+				"${PODS_ROOT}/../../Assets/eraseIcon.png",
+				"${PODS_ROOT}/../../Assets/eraseIcon@2x.png",
+				"${PODS_ROOT}/../../Assets/extendNonEnumerable.js",
+				"${PODS_ROOT}/../../Assets/force-arrow.png",
+				"${PODS_ROOT}/../../Assets/force-arrow@2x.png",
+				"${PODS_ROOT}/../../Assets/keypath.js",
+				"${PODS_ROOT}/../../Assets/lodash.js",
+				"${PODS_ROOT}/../../Assets/ModuleExample.js",
+				"${PODS_ROOT}/../../Assets/PCPlayerPlay.png",
+				"${PODS_ROOT}/../../Assets/PCPlayerPlay@2x.png",
+				"${PODS_ROOT}/../../Assets/photolibrary.js",
+				"${PODS_ROOT}/../../Assets/REPLArrow.png",
+				"${PODS_ROOT}/../../Assets/REPLArrow@2x.png",
+				"${PODS_ROOT}/../../Assets/sound.js",
+				"${PODS_ROOT}/../../Assets/watch.js",
+				"${PODS_ROOT}/../../Source/View Controllers/PCAppView.xib",
+				"${PODS_ROOT}/../../Source/View Controllers/PCREPLView.xib",
+				"${PODS_ROOT}/RPJSContext/Assets/JS/Core Modules/request.js",
+				"${PODS_ROOT}/RPJSContext/Assets/JS/EventEmitter.js",
+				"${PODS_ROOT}/RPJSContext/Assets/JS/regenerator.js",
+				"${PODS_ROOT}/RPJSContext/Assets/JS/rsvp.js",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/blocktags",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bind.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CameraIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CameraIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/co.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/creation.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/eraseIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/eraseIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/extendNonEnumerable.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/force-arrow.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/force-arrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/keypath.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lodash.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ModuleExample.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PCPlayerPlay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PCPlayerPlay@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/photolibrary.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/REPLArrow.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/REPLArrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sound.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/watch.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PCAppView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PCREPLView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/request.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EventEmitter.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/regenerator.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/rsvp.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PencilCaseLauncherDemo/Pods-PencilCaseLauncherDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25AE669117A1E8DAACFF1BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PencilCaseLauncherDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADBE73819A28F1B00E1A4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBE75019A28F1B00E1A4EA /* PCLAppDelegate.m in Sources */,
+				DADBE74C19A28F1B00E1A4EA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADBE75319A28F1B00E1A4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA00D3401A435A810011A42F /* PCTableNodeEventTests.m in Sources */,
+				CA2B49B41A42477A00C33C95 /* PCSlideNodeContactDelegateTests.m in Sources */,
+				CA82D26319D1F8C500104A41 /* SKNodeTouchRecognizerTests.m in Sources */,
+				BCEE05F71AA10E680039B2A6 /* SFGestureRecognizerTests.m in Sources */,
+				3F63803C1B0BCACA00FB7545 /* PCLRetainCycleIntegrationTests.m in Sources */,
+				3FAFDF071A0977B100A8B181 /* SKNode+LifeCycleTests.m in Sources */,
+				CA5BD8061A422B1E00855918 /* PCJSContextTests.m in Sources */,
+				2CF600521A1FA27900C540BC /* PCAppViewControllerTests.m in Sources */,
+				83593625CE92BA9EF3908928 /* PCSlideNodeContextEventTests.m in Sources */,
+				835933094CCD103BA9DB9C90 /* PCMultiViewNodeEventTests.m in Sources */,
+				83593C1AF08071F2BD978F51 /* PCGestureEquatableTests.m in Sources */,
+				83593457958F571CBA22D7FC /* UIGestureRecognizerJSEventsTests.m in Sources */,
+				83593293895731B64EC89BA4 /* CCBAnimationManagerTests.m in Sources */,
+				835932D6E133E693FEAB1053 /* PCSlideNodeTests.m in Sources */,
+				835931C834DD94EA90E513A0 /* PCCameraCaptureNodeTests.m in Sources */,
+				835935FE947EA9776E7CC354 /* PCButtonTests.m in Sources */,
+				BC0A48F21B3B4A890097AF29 /* PCCoordinateConversionTests.m in Sources */,
+				83593423B229AB3C06666B2C /* PCSwitchTests.m in Sources */,
+				8359394C46F7182393CF1C34 /* PCSliderNodeTests.m in Sources */,
+				835934FD7381E72FDC7A442C /* PCBeaconManagerTests.m in Sources */,
+				8359361BF7AC808EBA0125BC /* PCAppTransitionControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DADBE75D19A28F1B00E1A4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADBE73B19A28F1B00E1A4EA /* PencilCaseLauncherDemo */;
+			targetProxy = DADBE75C19A28F1B00E1A4EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DADBE74819A28F1B00E1A4EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBE74919A28F1B00E1A4EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DADBE76119A28F1B00E1A4EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBE76219A28F1B00E1A4EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DADBE76619A28F1B00E1A4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DADBE76719A28F1B00E1A4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DADBE76919A28F1B00E1A4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9EAD1AB88C0BB2EC006AC8 /* Pods-PencilCaseLauncherDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9729852L3Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PencilCaseLauncherDemo/PencilCaseLauncherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PencilCaseLauncherDemo/PencilCaseLauncherDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f041e5f8-697a-48a6-94d6-d5d0e5497fd8";
+				PROVISIONING_PROFILE_SPECIFIER = "Cody - Wildcard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DADBE76A19A28F1B00E1A4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E98E770C8710EDF9A874F36 /* Pods-PencilCaseLauncherDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PencilCaseLauncherDemo/PencilCaseLauncherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PencilCaseLauncherDemo/PencilCaseLauncherDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DADBE76C19A28F1B00E1A4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026DAF46504DCDB0167D2A43 /* Pods-PencilCaseLauncherDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PencilCaseLauncherDemo.app/PencilCaseLauncherDemo";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9729852L3Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PencilCaseLauncherDemo/PencilCaseLauncherDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PencilCaseLauncherDemoTests/PencilCaseLauncherDemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DADBE76D19A28F1B00E1A4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383B5FF11CB4D9829F2600E5 /* Pods-PencilCaseLauncherDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PencilCaseLauncherDemo.app/PencilCaseLauncherDemo";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PencilCaseLauncherDemo/PencilCaseLauncherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PencilCaseLauncherDemoTests/PencilCaseLauncherDemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADBE73719A28F1B00E1A4EA /* Build configuration list for PBXProject "PencilCaseLauncherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBE76619A28F1B00E1A4EA /* Debug */,
+				DADBE76719A28F1B00E1A4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADBE76819A28F1B00E1A4EA /* Build configuration list for PBXNativeTarget "PencilCaseLauncherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBE76919A28F1B00E1A4EA /* Debug */,
+				DADBE76A19A28F1B00E1A4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADBE76B19A28F1B00E1A4EA /* Build configuration list for PBXNativeTarget "PencilCaseLauncherDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBE76C19A28F1B00E1A4EA /* Debug */,
+				DADBE76D19A28F1B00E1A4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADBE73419A28F1B00E1A4EA /* Project object */;
+}

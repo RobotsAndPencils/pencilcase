@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>representationTemplate</key>
+	<string>{{{ switchExpression }}}.on(&apos;toggled&apos;, function({{{ exposedTokens }}}) {\nif ({{{ stateExpression }}} !== &apos;any&apos; &amp;&amp; arguments[1] !== {{{ stateExpression }}}) return;\n{{{ thens }}}\n})</string>
+	<key>analyticsString</key>
+	<string>When Switch is Toggled</string>
+</dict>
+</plist>

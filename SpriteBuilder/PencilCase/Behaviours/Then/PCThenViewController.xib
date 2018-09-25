@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCThenViewController">
+            <connections>
+                <outlet property="backgroundBottomConstraint" destination="ASb-S4-2I5" id="b2X-tG-djF"/>
+                <outlet property="backgroundTopConstraint" destination="Cpb-A2-y9M" id="0SO-dz-3eN"/>
+                <outlet property="expressionTextView" destination="Wdb-Y7-y3B" id="Fle-z5-8LH"/>
+                <outlet property="thenBackgroundView" destination="aU4-ff-HSb" id="S5J-C9-uOZ"/>
+                <outlet property="thenView" destination="Hz6-mo-xeY" id="cA5-8g-uLm"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY" customClass="PCThenView">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="73"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="aU4-ff-HSb" customClass="PCThenBackgroundView">
+                    <rect key="frame" x="1" y="0.0" width="371" height="73"/>
+                    <subviews>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Fzt-ew-t6f">
+                            <rect key="frame" x="171" y="0.0" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="24K-83-C0j"/>
+                                <constraint firstAttribute="height" constant="28" id="y4n-TW-e5B"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" id="jeh-FR-FlW">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="attachToNextThen:" target="-2" id="S0C-Of-ULU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Fzt-ew-t6f" secondAttribute="bottom" id="5KF-qG-4ax"/>
+                        <constraint firstAttribute="centerX" secondItem="Fzt-ew-t6f" secondAttribute="centerX" id="uya-Dz-kqE"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topConnected" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="bottomConnected" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideTopConnector" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideBottomConnector" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </customView>
+                <customView verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-Y7-y3B" customClass="PCExpressionTextView">
+                    <rect key="frame" x="10" y="30" width="353" height="25"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aU4-ff-HSb" secondAttribute="bottom" id="ASb-S4-2I5"/>
+                <constraint firstItem="Wdb-Y7-y3B" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="CC8-0z-gFa"/>
+                <constraint firstItem="aU4-ff-HSb" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Cpb-A2-y9M"/>
+                <constraint firstAttribute="trailing" secondItem="Wdb-Y7-y3B" secondAttribute="trailing" constant="10" id="D9i-NG-inI"/>
+                <constraint firstItem="Wdb-Y7-y3B" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="18" id="EUh-mK-QW6"/>
+                <constraint firstAttribute="trailing" secondItem="aU4-ff-HSb" secondAttribute="trailing" constant="1" id="d0R-ZQ-1lt"/>
+                <constraint firstItem="aU4-ff-HSb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="1" id="qDc-Ak-p9W"/>
+                <constraint firstAttribute="bottom" secondItem="Wdb-Y7-y3B" secondAttribute="bottom" constant="30" id="vtA-cS-BRY"/>
+            </constraints>
+            <point key="canvasLocation" x="246.5" y="291.5"/>
+        </customView>
+    </objects>
+</document>

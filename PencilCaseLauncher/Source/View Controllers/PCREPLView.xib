@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PCREPLViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="K7n-Oy-ZWo" id="NMK-SA-ejR"/>
+                <outlet property="textField" destination="JMf-LN-svb" id="SnS-Hg-cea"/>
+                <outlet property="textView" destination="08n-tz-td3" id="0Tl-pd-4dY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08n-tz-td3">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="231"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="tCz-li-CNu"/>
+                    </connections>
+                </textView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JMf-LN-svb">
+                    <rect key="frame" x="30" y="231" width="225" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.01" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="A2D-2h-C8x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="XdH-FS-XSX"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="REPLArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="i0W-Nr-tbc">
+                    <rect key="frame" x="0.0" y="231" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRq-I7-Hak">
+                    <rect key="frame" x="203" y="10" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8fi-De-h2c"/>
+                        <constraint firstAttribute="width" constant="44" id="F34-QC-kXI"/>
+                    </constraints>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeREPL:" destination="-1" eventType="touchUpInside" id="YmK-JI-n8J"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="08n-tz-td3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BRH-cX-Kxo"/>
+                <constraint firstAttribute="trailing" secondItem="08n-tz-td3" secondAttribute="trailing" id="CO5-5s-8rT"/>
+                <constraint firstAttribute="bottomMargin" secondItem="i0W-Nr-tbc" secondAttribute="bottom" id="K7n-Oy-ZWo"/>
+                <constraint firstItem="JMf-LN-svb" firstAttribute="leading" secondItem="i0W-Nr-tbc" secondAttribute="trailing" id="LuN-94-b6q"/>
+                <constraint firstItem="i0W-Nr-tbc" firstAttribute="top" secondItem="08n-tz-td3" secondAttribute="bottom" id="YN3-Fs-bbU"/>
+                <constraint firstItem="i0W-Nr-tbc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ygf-gp-ezr"/>
+                <constraint firstItem="08n-tz-td3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="-20" id="aVi-y6-j9y"/>
+                <constraint firstItem="YRq-I7-Hak" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="aiv-ej-Jbg"/>
+                <constraint firstItem="JMf-LN-svb" firstAttribute="top" secondItem="i0W-Nr-tbc" secondAttribute="top" id="cPd-g6-eiw"/>
+                <constraint firstAttribute="trailing" secondItem="YRq-I7-Hak" secondAttribute="trailing" constant="8" id="jBA-I5-VzL"/>
+                <constraint firstAttribute="trailing" secondItem="JMf-LN-svb" secondAttribute="trailing" id="xdr-dn-XH5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="142.578125" y="256.34765625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="REPLArrow.png" width="30" height="30"/>
+    </resources>
+</document>

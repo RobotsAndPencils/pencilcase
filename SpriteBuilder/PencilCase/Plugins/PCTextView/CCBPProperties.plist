@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Text Box</string>
+	<key>javaScriptClassName</key>
+	<string>TextBox</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string>Multiple lines of text.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCTextView</string>
+	<key>editorClassName</key>
+	<string>PCBTextView</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCSKTextView</string>
+	<key>actionChangeableProperties</key>
+	<array>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>outlineWidth</string>
+					<key>displayName</key>
+					<string>Outline Width</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Outline Width</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>outlineWidth</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>text</string>
+					<key>displayName</key>
+					<string>Text</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Text</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>textView</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Text Box</string>
+			<key>name</key>
+			<string>PCTextView</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>String</string>
+			<key>hidden</key>
+			<true/>
+			<key>name</key>
+			<string>string</string>
+			<key>type</key>
+			<string>Text</string>
+			<key>localizable</key>
+			<false/>
+			<key>dontSetInEditor</key>
+			<true/>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>hidden</key>
+			<true/>
+			<key>default</key>
+			<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs48 \cf0 \ulc0 Double click to insert text}</string>
+			<key>displayName</key>
+			<string>Text Field</string>
+			<key>type</key>
+			<string>Text</string>
+			<key>name</key>
+			<string>rtfContent</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Rich Text</string>
+			<key>dontSetInEditor</key>
+			<true/>
+			<key>name</key>
+			<string>RichText</string>
+			<key>type</key>
+			<string>RichText</string>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>322</integer>
+				<integer>200</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+	</array>
+	<key>spriteFrameDrop</key>
+	<dict>
+		<key>className</key>
+		<string>PCSprite</string>
+		<key>property</key>
+		<string>spriteFrame</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,447 @@
+{
+  "!name": "pencilcase",
+  "!define": {
+    "Point": {
+      "x": "number",
+      "y": "number"
+    },
+    "Scale": {
+      "x": "number",
+      "y": "number"
+    },
+    "Size": {
+      "width": "number",
+      "height": "number"
+    },
+    "Rectangle": {
+      "x": "number",
+      "y": "number",
+      "width": "number",
+      "height": "number"
+    },
+    "Vector": {
+      "dx": "number",
+      "dy": "number"
+    },
+    "BaseObject.prototype": {
+      "!url": "http://pencilcase.io/learn/api/reference/BaseObject.html",
+      "addedAt": "Date",
+      "alpha": "number",
+      "children": "Array",
+      "contentSize": "Size",
+      "frame": "Rectangle",
+      "hidden": "bool",
+      "name": "string",
+      "parent": "BaseObject",
+      "paused": "boolean",
+      "position": "Point",
+      "size": "Size",
+      "speed": "number",
+      "userInteractionEnabled": "boolean",
+      "xScale": "number",
+      "yScale": "number",
+      "scalePoint": "Scale",
+      "zPosition": "number",
+      "zRotation": "number",
+      "calculateAccumulatedFrame": "fn()",
+      "addChild": "fn(child: BaseObject)",
+      "insertChildAtIndex": "fn(child: BaseObject, index: number)",
+      "removeChildrenInArray": "fn(children: [BaseObject])",
+      "removeAllChildren": "fn()",
+      "removeFromParent": "fn()",
+      "childNodeWithName": "fn(name: string) -> BaseObject",
+      "inParentHierarchy": "fn(parent: BaseObject) -> bool",
+      "containsPoint": "fn(point: Point) -> bool",
+      "nodeAtPoint": "fn(point: Point) -> BaseObject",
+      "nodesAtPoint": "fn(point: Point) -> [BaseObject]",
+      "convertPointFromNode": "fn(point: Point, node: BaseObject) -> Point",
+      "convertPointToNode": "fn(point: Point, node: BaseObject) -> Point",
+      "intersectsNode": "fn(node: BaseObject) -> bool",
+      "applyTemplateNamed": "fn(name: string)"
+    },
+    "Beacon.prototype": {
+      "!url": "http://pencilcase.io/learn/api/reference/Beacon.html",
+      "beaconName": "string",
+      "beaconUUID": "string",
+      "beaconMajorId": "string",
+      "beaconMinorId": "string"
+    },
+    "Button.prototype": {
+      "!proto": "Control.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/Button.html",
+      "background": "ImageView",
+      "horizontalPadding": "number",
+      "label": "Label",
+      "title": "string",
+      "togglesSelectedState": "bool",
+      "verticalPadding": "number",
+      "zoomWhenHighlighted": "bool",
+      "setBackgroundTextureForState": "fn(texture: Texture, state: number)"
+    },
+    "CameraCaptureView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/CameraCaptureView.html",
+      "imageSprite": "ImageView",
+      "spriteFrame": "Texture"
+    },
+    "Color.prototype": {
+      "!url": "http://pencilcase.io/learn/api/reference/Color.html"
+    },
+    "Control.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/Control.html",
+      "continuous": "bool",
+      "enabled": "bool",
+      "highlighted": "bool",
+      "selected": "bool",
+      "state": "number",
+      "touchInside": "bool",
+      "tracking": "bool"
+    },
+    "FingerPaintView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/FingerPaintView.html",
+      "lineColor": "Color",
+      "lineWidth": "number",
+      "pressToShowColorPalette": "bool",
+      "clear": "fn()"
+    },
+    "ForceObject.prototype": {
+      "!proto": "ImageView.prototype",
+      "drawArrow": "bool",
+      "enabled": "bool"
+    },
+    "GradientView.prototype": {
+      "!proto": "ImageView.prototype",
+      "endColor": "Color",
+      "startColor": "Color"
+    },
+    "ImageView.prototype": {
+      "colorRGBA": "Color",
+      "spriteFrame": "Texture"
+    },
+    "Label.prototype": {
+      "!url": "http://pencilcase.io/learn/api/reference/Label.html",
+      "anchorPoint": "Point",
+      "fontColor": "Color",
+      "fontName": "string",
+      "fontSize": "number",
+      "horizontalAlignment": "number",
+      "string": "string",
+      "verticalAlignment": "number"
+    },
+    "MultiView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/MultiView.html",
+      "focusedCellIndex": "number",
+      "nextIndex": "number",
+      "previousIndex": "number",
+      "showPageIndicator": "bool",
+      "nextView": "fn(transitionType: number, transitionDuration: number)",
+      "previousView": "fn(transitionType: number, transitionDuration: number)",
+      "goToView": "fn(viewIndex: number, transitionType: number, transitionDuration: number)"
+    },
+    "MultiViewCell.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/MultiViewCell.html",
+      "anchorPoint": "Point",
+      "blendMode": "number",
+      "color": "Color",
+      "colorBlendFactor": "number",
+      "size": "Size"
+    },
+    "ParticleSystem.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/ParticleSystem.html",
+      "birthRate": "number",
+      "emissionAngle": "number",
+      "emissionAngleDegrees": "number",
+      "emissionAngleDegreesRange": "number",
+      "emissionAngleRange": "number",
+      "endColor": "Color",
+      "gravity": "Point",
+      "numParticlesToEmit": "number",
+      "particleAction": "Action",
+      "particleAlpha": "number",
+      "particleAlphaRange": "number",
+      "particleAlphaSpeed": "number",
+      "particleBirthRate": "number",
+      "particleBlendMode": "number",
+      "particleColor": "Color",
+      "particleColorAlphaRange": "number",
+      "particleColorAlphaSpeed": "number",
+      "particleColorBlendFactor": "number",
+      "particleColorBlendFactorRange": "number",
+      "particleColorBlendFactorSpeed": "number",
+      "particleColorBlueRange": "number",
+      "particleColorBlueSpeed": "number",
+      "particleColorGreenRange": "number",
+      "particleColorGreenSpeed": "number",
+      "particleColorRedRange": "number",
+      "particleColorRedSpeed": "number",
+      "particleLifetime": "number",
+      "particleLifetimeRange": "number",
+      "particlePosition": "Point",
+      "particlePositionRange": "Vector",
+      "particleRotation": "number",
+      "particleRotationDegrees": "number",
+      "particleRotationDegrees": "number",
+      "particleRotationRange": "number",
+      "particleRotationSpeed": "number",
+      "particleScale": "number",
+      "particleScaleRange": "number",
+      "particleScaleSpeed": "number",
+      "particleSize": "Size",
+      "particleSpeed": "number",
+      "particleSpeedRange": "number",
+      "particleTexture": "Texture",
+      "particleZPosition": "number",
+      "particleZPositionRange": "number",
+      "particleZPositionSpeed": "number",
+      "resetOnVisibilityToggle": "bool",
+      "savedBirthRate": "number",
+      "startColor": "Color",
+      "targetNode": "BaseObject",
+      "xAcceleration": "number",
+      "yAcceleration": "number"
+    },
+    "ScrollContentView.prototype": {
+      "!proto": "ImageView.prototype"
+    },
+    "ScrollView.prototype": {
+      "!proto": "ImageView.prototype",
+      "pagingEnabled": "bool",
+      "userScrollEnabled": "bool"
+    },
+    "Shape.prototype": {
+      "!proto": "ImageView.prototype"
+    },
+    "Slider.prototype": {
+      "!proto": "ImageView.prototype",
+      "minimumValue": "number",
+      "maximumValue": "number",
+      "currentValue": "number"
+    },
+    "Switch.prototype": {
+      "!proto": "ImageView.prototype",
+      "isOn": "bool"
+    },
+    "TableView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/TableView.html",
+      "backgroundColor": "Color",
+      "enableRefreshControl": "bool",
+      "endRefreshing": "fn()"
+    },
+    "TextField.prototype": {
+      "!proto": "Control.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/TextField.html",
+      "isSecureText": "bool"
+    },
+    "TextInput.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/TextInput.html",
+      "text": "string",
+      "fontName": "string",
+      "fontSize": "number",
+      "backgroundSpriteFrame": "Texture"
+    },
+    "Texture.prototype": {
+      "!url": "http://pencilcase.io/learn/api/reference/Texture.html"
+    },
+    "TextView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/TextView.html",
+      "string": "string"
+    },
+    "ThreeDView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/ThreeDView.html"
+    },
+    "VideoView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/VideoView.html",
+      "posterFrameTime": "number",
+      "timelineRepeat": "number"
+    },
+    "WebView.prototype": {
+      "!proto": "ImageView.prototype",
+      "!url": "http://pencilcase.io/learn/api/reference/WebView.html",
+      "currentURL": "string",
+      "homeURL": "string",
+      "back": "fn(callback: fn())",
+      "forward": "fn(callback: fn())",
+      "refresh": "fn(callback: fn())",
+      "stop": "fn(callback: fn())",
+      "home": "fn(callback: fn())"
+    }
+  },
+  "console": {
+    "log": {
+      "!type": "fn(text: string)"
+    }
+  },
+  "Alert": {
+    "!url": "http://pencilcase.io/learn/api/reference/Alert.html",
+    "showAlert": {
+      "!type": "fn(title: string, message: string, callback: fn())",
+      "!url": "http://pencilcase.io/learn/api/reference/Alert.html#alert.showalert(title,-message,-callback)"
+    }
+  },
+  "BaseObject": {
+    "!url": "http://pencilcase.io/learn/api/reference/BaseObject.html"
+  },
+  "Color": {
+    "colorWithWhite": "fn(white: number, alpha: number) -> +Color",
+    "colorWithHSBAComponents": "fn(hue: number, saturation: number, brightness: number, alpha: number) -> +Color",
+    "colorWithRGBAComponents": "fn(red: number, green: number, blue: number, alpha: number) -> +Color",
+    "blackColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "Grayscale color with 0% white"
+    },
+    "darkGrayColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "Grayscale color with 33% white"
+    },
+    "lightGrayColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "Grayscale color with 66% white"
+    },
+    "whiteColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "Grayscale color with 100% white"
+    },
+    "grayColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "Grayscale color with 50% white"
+    },
+    "redColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 100% red, 0% green, 0% blue"
+    },
+    "greenColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 0% red, 100% green, 0% blue"
+    },
+    "blueColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 0% red, 0% green, 100% blue"
+    },
+    "cyanColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 0% red, 100% green, 100% blue"
+    },
+    "yellowColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 100% red, 100% green, 0% blue"
+    },
+    "magentaColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 100% red, 0% green, 100% blue"
+    },
+    "orangeColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 100% red, 50% green, 0% blue"
+    },
+    "purpleColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 50% red, 0% green, 50% blue"
+    },
+    "brownColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "RGB color with 60% red, 40% green, 20% blue"
+    },
+    "clearColor": {
+      "!type": "fn() -> +Color",
+      "!doc": "Grayscale color with 0% white, 0% alpha"
+    }
+  },
+  "Creation": {
+    "!url": "http://pencilcase.io/learn/api/reference/Creation.html",
+    "currentCard": "fn() -> Card",
+    "openExternalLink": {
+      "!type": "fn(url: string)",
+      "!doc": "Open the `url` in Safari"
+    },
+    "goToNextCard": {
+      "!type": "fn(transitionType: string, transitionDuration: number)"
+    },
+    "goToPreviousCard": {
+      "!type": "fn(transitionType: string, transitionDuration: number)"
+    },
+    "goToFirstCard": {
+      "!type": "fn(transitionType: string, transitionDuration: number)"
+    },
+    "goToLastCard": {
+      "!type": "fn(transitionType: string, transitionDuration: number)"
+    },
+    "goToCard": {
+      "!type": "fn(cardUUID: string, transitionType: string, transitionDuration: number)"
+    },
+    "playTimelineWithName": {
+      "!type": "fn(timelineName: string)"
+    },
+    "stopTimelineWithName": {
+      "!type": "fn()"
+    },
+    "createObject": {
+      "!type": "fn(objectType: string) -> +BaseObject"
+    },
+    "createParticlesFromTemplate": {
+      "!type": "fn(templateName: string) -> +BaseObject"
+    },
+    "createImageView": {
+      "!type": "fn(texture: Texture) -> +ImageView"
+    },
+    "nodeWithUUID": "fn(uuid: string) -> +BaseObject"
+  },
+  "ImageView": {
+    "imageWithName": {
+      "!type": "fn(name: string) -> +ImageView"
+    }
+  },
+  "KeyValueStore": {
+    "setValue": {
+      "!type": "fn(value: Object, key: string, collection: string, successCallback: fn(value: Object), failureCallback: fn(error: string))"
+    },
+    "getValue": {
+      "!type": "fn(key: string, collection: string) -> Object"
+    },
+    "allKeysInCollection": {
+      "!type": "fn(collection: string) -> [string]"
+    }
+  },
+  "ParticleSystem": {
+    "!url": "http://pencilcase.io/learn/api/reference/ParticleSystem.html",
+    "fromTemplateNamed": {
+      "!type": "fn(name: string) -> +ParticleSystem"
+    }
+  },
+  "PhotoLibrary": {
+    "!url": "http://pencilcase.io/learn/api/reference/PhotoLibrary.html",
+    "loadLastImageFromImageLibrary": "fn() -> Promise"
+  },
+  "Request": {
+    "!url": "http://pencilcase.io/learn/api/reference/Requests.html",
+    "get": {
+      "!type": "fn(url: string) -> Promise"
+    },
+    "post": {
+      "!type": "fn(url: string, params: Object) -> Promise"
+    }
+  },
+  "Sound": {
+    "!url": "http://pencilcase.io/learn/api/reference/Sound.html",
+    "playSoundAtPath": "fn(path: string) -> Promise",
+    "playSoundWithUUID": "fn(uuid: string) -> Promise"
+  },
+  "Texture": {
+    "!url": "http://pencilcase.io/learn/api/reference/Texture.html",
+    "textureWithUUID": "fn(uuid: string) -> +Texture",
+    "textureWithRelativeImagePath": "fn(relativePath: string) -> +Texture"
+  },
+  "UUID": {
+    "!url": "http://pencilcase.io/learn/api/reference/UUID.html",
+    "uuid": "fn() -> +string"
+  }
+}

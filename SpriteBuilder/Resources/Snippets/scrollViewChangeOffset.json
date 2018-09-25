@@ -1,0 +1,5 @@
+{
+    "title" : "Scroll View - Change Offset",
+    "description" : "Change the offset of a Scroll View. Optionally animated",
+    "code" : "MyScrollView.setOffset({x: MyScrollView.offset.x + 20, y: 0}, true);"
+}

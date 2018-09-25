@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Text Label</string>
+	<key>javaScriptClassName</key>
+	<string>Label</string>
+	<key>ordering</key>
+	<integer>9000</integer>
+	<key>description</key>
+	<string>A single line of text.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCLabelTTF</string>
+	<key>spriteKitClassName</key>
+	<string>CCLabelTTF</string>
+	<key>editorClassName</key>
+	<string>CCBPLabelTTF</string>
+	<key>editorSpriteKitClassName</key>
+	<string>CCBPSKLabelTTF</string>
+	<key>actionChangeableProperties</key>
+	<array>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>outlineWidth</string>
+					<key>displayName</key>
+					<string>Outline Width</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Outline Width</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>outlineWidth</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>outlineColor</string>
+					<key>displayName</key>
+					<string>Outline Color</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Outline Color</string>
+			<key>inspectorType</key>
+			<string>Color</string>
+			<key>propertyName</key>
+			<string>outlineColor</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>shadowBlurRadius</string>
+					<key>displayName</key>
+					<string>Shadow Blur</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Shadow Blur</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>shadowBlurRadius</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>shadowOffset</string>
+					<key>displayName</key>
+					<string>Shadow Offset</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Shadow Offset</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>shadowOffset</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>shadowColor</string>
+					<key>displayName</key>
+					<string>Shadow Color</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Shadow Color</string>
+			<key>inspectorType</key>
+			<string>Color</string>
+			<key>propertyName</key>
+			<string>shadowColor</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>fontColor</string>
+					<key>displayName</key>
+					<string>Font Color</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Font Color</string>
+			<key>inspectorType</key>
+			<string>Color</string>
+			<key>propertyName</key>
+			<string>fontColor</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>fontSize</string>
+					<key>displayName</key>
+					<string>Font Size</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Font Size</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>fontSize</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>string</string>
+					<key>displayName</key>
+					<string>Text</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Text</string>
+			<key>inspectorType</key>
+			<string>Expression</string>
+			<key>propertyName</key>
+			<string>string</string>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Text Label</string>
+			<key>name</key>
+			<string>CCLabelTTF</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>default</key>
+			<string>Sample Text</string>
+			<key>displayName</key>
+			<string>Label text</string>
+			<key>type</key>
+			<string>Text</string>
+			<key>name</key>
+			<string>string</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>default</key>
+			<string>Helvetica</string>
+			<key>displayName</key>
+			<string>Font name</string>
+			<key>type</key>
+			<string>FontTTF</string>
+			<key>name</key>
+			<string>fontName</string>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Font size</string>
+			<key>type</key>
+			<string>FloatScale</string>
+			<key>name</key>
+			<string>fontSize</string>
+			<key>default</key>
+			<integer>32</integer>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fontColor</string>
+			<key>defaultSerialization</key>
+			<array>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
+				<string>255</string>
+			</array>
+			<key>displayName</key>
+			<string>Font color</string>
+			<key>type</key>
+			<string>Color4</string>
+			<key>default</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+	</array>
+</dict>
+</plist>

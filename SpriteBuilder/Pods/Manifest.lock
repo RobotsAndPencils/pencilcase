@@ -1,0 +1,186 @@
+PODS:
+  - ACEDrawingView (1.3.5)
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BFColorPickerPopover (1.0.1)
+  - BlocksKit/Core (2.2.5)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - FileMD5Hash (2.0.0)
+  - FormatterKit (1.8.0):
+    - FormatterKit/AddressFormatter (= 1.8.0)
+    - FormatterKit/ArrayFormatter (= 1.8.0)
+    - FormatterKit/ColorFormatter (= 1.8.0)
+    - FormatterKit/LocationFormatter (= 1.8.0)
+    - FormatterKit/NameFormatter (= 1.8.0)
+    - FormatterKit/OrdinalNumberFormatter (= 1.8.0)
+    - FormatterKit/TimeIntervalFormatter (= 1.8.0)
+    - FormatterKit/UnitOfInformationFormatter (= 1.8.0)
+    - FormatterKit/URLRequestFormatter (= 1.8.0)
+  - FormatterKit/AddressFormatter (1.8.0)
+  - FormatterKit/ArrayFormatter (1.8.0)
+  - FormatterKit/ColorFormatter (1.8.0)
+  - FormatterKit/LocationFormatter (1.8.0)
+  - FormatterKit/NameFormatter (1.8.0)
+  - FormatterKit/OrdinalNumberFormatter (1.8.0)
+  - FormatterKit/TimeIntervalFormatter (1.8.0)
+  - FormatterKit/UnitOfInformationFormatter (1.8.0)
+  - FormatterKit/URLRequestFormatter (1.8.0)
+  - GHMarkdownParser (0.1.2)
+  - GRMustache (7.2.0):
+    - JRSwizzle (~> 1.0)
+  - INPopoverController (0.0.1)
+  - JRSwizzle (1.0)
+  - Kiwi (2.3.1)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
+  - MMMarkdown (0.4.1)
+  - PencilCaseLauncher (1.0.0):
+    - ACEDrawingView (= 1.3.5)
+    - BlocksKit/Core (= 2.2.5)
+    - GHMarkdownParser
+    - JRSwizzle (= 1.0)
+    - PSAlertView (= 2.0.3)
+    - RPJSContext (= 2.2.1)
+    - RXCollections (= 1.0)
+    - SSZipArchive (= 0.3.2)
+    - SVProgressHUD (= 1.1.2)
+    - YapDatabase (= 2.5.4)
+  - PSAlertView (2.0.3)
+  - PureLayout (1.1.0)
+  - RPBorderlessSegmentedControl (1.0.2)
+  - RPInstantAlpha (1.0.0)
+  - RPJSContext (2.2.1):
+    - AFNetworking (~> 2.5)
+  - RXCollections (1.0)
+  - SSZipArchive (0.3.2)
+  - SVProgressHUD (1.1.2)
+  - TransitionKit (2.2.0)
+  - UICKeyChainStore (1.1.1)
+  - Underscore.m (0.2.1)
+  - YapDatabase (2.5.4):
+    - YapDatabase/standard (= 2.5.4)
+  - YapDatabase/common (2.5.4):
+    - CocoaLumberjack (~> 1)
+  - YapDatabase/standard (2.5.4):
+    - YapDatabase/common
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6)
+  - "BFColorPickerPopover (from `git@github.com:RobotsAndPencils/BFColorPickerPopover`, branch `master`)"
+  - FileMD5Hash (~> 2.0)
+  - FormatterKit (~> 1.8)
+  - GRMustache (~> 7.2.0)
+  - "INPopoverController (from `git@github.com:RobotsAndPencils/INPopoverController`, branch `allow-uncentered-arrow`)"
+  - Kiwi (~> 2.3)
+  - Mantle (~> 1.5)
+  - MMMarkdown (~> 0.3)
+  - PencilCaseLauncher (from `..`)
+  - PureLayout (~> 1.0)
+  - RPBorderlessSegmentedControl (~> 1.0)
+  - RPInstantAlpha (~> 1.0)
+  - SSZipArchive (~> 0.3)
+  - TransitionKit (= 2.2.0)
+  - UICKeyChainStore (~> 1.1)
+  - Underscore.m (~> 0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ACEDrawingView
+    - AFNetworking
+    - BlocksKit
+    - CocoaLumberjack
+    - FileMD5Hash
+    - FormatterKit
+    - GHMarkdownParser
+    - GRMustache
+    - JRSwizzle
+    - Kiwi
+    - Mantle
+    - MMMarkdown
+    - PSAlertView
+    - PureLayout
+    - RPBorderlessSegmentedControl
+    - RPInstantAlpha
+    - RPJSContext
+    - RXCollections
+    - SSZipArchive
+    - SVProgressHUD
+    - TransitionKit
+    - UICKeyChainStore
+    - Underscore.m
+    - YapDatabase
+
+EXTERNAL SOURCES:
+  BFColorPickerPopover:
+    :branch: master
+    :git: "git@github.com:RobotsAndPencils/BFColorPickerPopover"
+  INPopoverController:
+    :branch: allow-uncentered-arrow
+    :git: "git@github.com:RobotsAndPencils/INPopoverController"
+  PencilCaseLauncher:
+    :path: ".."
+
+CHECKOUT OPTIONS:
+  BFColorPickerPopover:
+    :commit: 93fef6b8c1dbd34bd34190d5e45f72a5b7c39eb0
+    :git: "git@github.com:RobotsAndPencils/BFColorPickerPopover"
+  INPopoverController:
+    :commit: a92e844c9d331afc5257aac0558199c1c4c815d6
+    :git: "git@github.com:RobotsAndPencils/INPopoverController"
+
+SPEC CHECKSUMS:
+  ACEDrawingView: d951dd5588ece23ad300bcadfdc488c80fa3861b
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  BFColorPickerPopover: 99679d8626f7c5a35bee90347ff1c440cf8a4ce2
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  FileMD5Hash: 3ed69cc19a21ff4d30ae8833fc104275ad2c7de0
+  FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
+  GHMarkdownParser: 14cbf59d0ab9450017d843dffd4a3ef691e5bd77
+  GRMustache: 4cb75b19fda66962770e111b4b3a7aa7fa4b7f21
+  INPopoverController: e4c315804b6d227c84a6dd64adf6732600b659fc
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
+  MMMarkdown: c2e8b7aa155ae7feb72ed288b2915de81734e914
+  PencilCaseLauncher: 3ef952f67d23b3e869c4827b95ce1883f4451803
+  PSAlertView: 16d35f5dba549418492cf68a750d4f0dca21f4a2
+  PureLayout: 461724f6da2da366709e5fe6e6006f6039b7c2dd
+  RPBorderlessSegmentedControl: 9a3dd91718f9589d3cca59f27984819300cc5bb7
+  RPInstantAlpha: f485356b446b3e54b12e30b427abe13c115bcf4e
+  RPJSContext: 3a7f571a41796377b4959254cbd8c39bbe3a5e98
+  RXCollections: ef46a1c3b1f25711117ece94c48d9beae9f143a6
+  SSZipArchive: 11801759495fa4efb7512ef652eb0042d68305d7
+  SVProgressHUD: 3afb875b9eb23acd1bed9b82495695c68621a8b2
+  TransitionKit: 5c9001a77acc409d71f26a4eba0159cf8619c418
+  UICKeyChainStore: 891bcd2fe687c92db8e648cba035c4e662ffa43e
+  Underscore.m: b86ca364d60509a39eb9c7886443c063b793aaba
+  YapDatabase: 52370b36f692e23c41c86e60f3bbf81b1c8ae44a
+
+PODFILE CHECKSUM: 178480345f01f126d2c2061ddfb2b48b3d6d5bd1
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,5 @@
+{
+    "title" : "Button - Tap Handler",
+    "description" : "Adds a callback function that is called after a user releases their tap inside the button's frame.",
+    "code" : "this.setTouchUpInsideHandler(function() {\n\n});"
+}

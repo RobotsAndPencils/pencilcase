@@ -1,0 +1,5 @@
+{
+    "title" : "Play Timeline",
+    "description" : "Plays a named timeline.",
+    "code" : "Creation.playTimelineWithName('TimelineName');"
+}

@@ -1,0 +1,5 @@
+{
+    "title" : "Switch - Toggle Handler",
+    "description" : "Run some code when a switch is toggled.",
+    "code" : "MySwitch.addToggleHandler(function(value) {\n    MyLabel.string = value ? 'On' : 'Off';\n});"
+}

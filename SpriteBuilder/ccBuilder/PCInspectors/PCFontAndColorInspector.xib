@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6246" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6246"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCFontAndColorInspector">
+            <connections>
+                <outlet property="colorWell" destination="LEt-UT-twP" id="3YP-KQ-XgB"/>
+                <outlet property="fontMenu" destination="jHr-Fz-8S4" id="g04-SP-HwJ"/>
+                <outlet property="fontNameButton" destination="hzE-ep-NlP" id="iWA-VU-Pz7"/>
+                <outlet property="fontSizeTextField" destination="emP-ZE-Ids" id="OzI-4A-T2Z"/>
+                <outlet property="titleTextField" destination="VjX-a7-JJm" id="ab5-oV-cQN"/>
+                <outlet property="view" destination="1gN-0o-4cj" id="Ngh-yW-IYe"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1gN-0o-4cj">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="VjX-a7-JJm">
+                    <rect key="frame" x="-2" y="6" width="28" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Font" id="WKC-fP-7EQ">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-ep-NlP">
+                    <rect key="frame" x="26" y="1" width="114" height="22"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="HNe-vU-Xoe">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="jHr-Fz-8S4"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="selectedValue" keyPath="self.fontName" id="fkt-CL-4aD"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="emP-ZE-Ids">
+                    <rect key="frame" x="141" y="3" width="44" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="7um-2i-wnh"/>
+                        <constraint firstAttribute="height" constant="20" id="grq-ea-cXV"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="zZZ-hM-g4g">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="InT-ML-eSK"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.fontSize" id="g2O-9b-b5h"/>
+                        <outlet property="delegate" destination="-2" id="Mky-s8-dB6"/>
+                    </connections>
+                </textField>
+                <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="LEt-UT-twP" customClass="BFPopoverColorWell">
+                    <rect key="frame" x="188" y="3" width="45" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="kUm-jk-nXi"/>
+                        <constraint firstAttribute="height" constant="20" id="zJn-df-5Pd"/>
+                    </constraints>
+                    <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.fontColor" id="G4g-Pc-jVx"/>
+                    </connections>
+                </colorWell>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LEt-UT-twP" firstAttribute="leading" secondItem="emP-ZE-Ids" secondAttribute="trailing" constant="3" id="825-tp-Hvb"/>
+                <constraint firstAttribute="trailing" secondItem="LEt-UT-twP" secondAttribute="trailing" constant="3" id="8ht-dN-UU6"/>
+                <constraint firstItem="hzE-ep-NlP" firstAttribute="leading" secondItem="VjX-a7-JJm" secondAttribute="trailing" constant="5" id="BfO-eM-au2"/>
+                <constraint firstItem="VjX-a7-JJm" firstAttribute="leading" secondItem="1gN-0o-4cj" secondAttribute="leading" id="Jqf-qq-Iue"/>
+                <constraint firstAttribute="centerY" secondItem="LEt-UT-twP" secondAttribute="centerY" id="MED-ix-6Yx"/>
+                <constraint firstItem="emP-ZE-Ids" firstAttribute="leading" secondItem="hzE-ep-NlP" secondAttribute="trailing" constant="4" id="ObO-NO-Yh0"/>
+                <constraint firstItem="LEt-UT-twP" firstAttribute="leading" secondItem="emP-ZE-Ids" secondAttribute="trailing" constant="3" id="YHc-fx-QXm"/>
+                <constraint firstAttribute="centerY" secondItem="emP-ZE-Ids" secondAttribute="centerY" id="q7W-en-FXq"/>
+                <constraint firstAttribute="centerY" secondItem="VjX-a7-JJm" secondAttribute="centerY" id="rCG-Eo-0Ju"/>
+                <constraint firstItem="emP-ZE-Ids" firstAttribute="leading" secondItem="hzE-ep-NlP" secondAttribute="trailing" constant="4" id="xmu-UW-GMI"/>
+                <constraint firstAttribute="centerY" secondItem="hzE-ep-NlP" secondAttribute="centerY" id="zlg-5o-EmP"/>
+            </constraints>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Jod-sF-dJr"/>
+    </objects>
+</document>

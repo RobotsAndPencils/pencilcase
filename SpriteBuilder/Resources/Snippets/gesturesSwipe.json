@@ -1,0 +1,5 @@
+{
+    "title" : "Gestures - Swipe",
+    "description" : "Adds a callback function called when a swipe occurs.",
+    "code" : "this.addSwipeRecognizerWithHandler(function(eventInfo) {\n});"
+}

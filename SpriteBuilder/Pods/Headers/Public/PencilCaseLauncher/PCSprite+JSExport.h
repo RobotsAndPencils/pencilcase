@@ -1,0 +1,1 @@
+../../../../../PencilCaseLauncher/Source/Runtime/Categories/Nodes/PCSprite+JSExport.h

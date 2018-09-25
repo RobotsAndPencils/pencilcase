@@ -1,0 +1,104 @@
+require 'fileutils'
+require 'pathname'
+
+PLAYER_NAME = "EmbeddedPlayer"
+MERGED_LIBRARY_NAME = "libPencilCaseLauncher.a"
+
+# Note: Make has a 12 year old bug that prevents it from correctly handling files with
+#       spaces (see http://savannah.gnu.org/bugs/?712). Thus it was decided to use
+#       Rake because it is available for any dev or build box that already requires
+#       Ruby through cocoapods (Rake ships with Ruby since 1.9).
+
+def build_paths(sdk)
+  base = "#{ENV['BUILD_DIR']}/#{ENV['CONFIGURATION']}-#{sdk}"
+  player = "#{base}/#{PLAYER_NAME}.app/#{PLAYER_NAME}"
+  lib = "#{base}/merged/#{MERGED_LIBRARY_NAME}"
+  puts "Build paths: #{[base, player, lib]}"
+  [base, player, lib]
+end
+
+def files(dir)
+  Dir[dir].select{|f| File.file?(f)}.collect{|f| "'#{f}'"}
+end
+
+def run_system(command)
+  puts "run_system: #{command}"
+  system(command)
+end
+
+DEVICE_BUILD_PATH, DEVICE_PLAYER, DEVICE_MERGED_LIBRARY = build_paths("iphoneos")
+SIMULATOR_BUILD_PATH, SIMULATOR_PLAYER, SIMULATOR_MERGED_LIBRARY = build_paths("iphonesimulator")
+UNIVERSAL_BUILD_PATH, UNIVERSAL_PLAYER, UNIVERSAL_MERGED_LIBRARY = build_paths("universal")
+
+# During a normal build, Xcode will invoke this build with ACTION="" meaning the "default" task. 
+task :default => UNIVERSAL_MERGED_LIBRARY
+
+# Shorthand for testing on the command line
+task :universal => UNIVERSAL_MERGED_LIBRARY
+
+# This task will ensure the simulator version of the library is up to date before using lipo to 
+# copy the i386 and x86_64 simulator slices into the universal library and executable
+file UNIVERSAL_MERGED_LIBRARY => [:other_player, DEVICE_MERGED_LIBRARY, SIMULATOR_MERGED_LIBRARY] do
+  run_system("rm -rf '#{UNIVERSAL_BUILD_PATH}'")
+  run_system("cp -r '#{DEVICE_BUILD_PATH}' '#{UNIVERSAL_BUILD_PATH}'")
+  run_system("lipo -create -output '#{UNIVERSAL_MERGED_LIBRARY}' '#{DEVICE_MERGED_LIBRARY}' '#{SIMULATOR_MERGED_LIBRARY}'")
+  run_system("lipo -create -output '#{UNIVERSAL_PLAYER}' '#{DEVICE_PLAYER}' '#{SIMULATOR_PLAYER}'")
+end
+
+file DEVICE_MERGED_LIBRARY => DEVICE_PLAYER do
+  run_system("mkdir -p '#{Pathname.new(DEVICE_MERGED_LIBRARY).parent.to_s}'")
+  run_system("rm -rf '#{DEVICE_MERGED_LIBRARY}'")
+  libfiles = files("#{DEVICE_BUILD_PATH}/*/lib*.a").join(" ")
+  run_system("libtool -static -o '#{DEVICE_MERGED_LIBRARY}' #{libfiles}")
+end
+
+file SIMULATOR_MERGED_LIBRARY => SIMULATOR_PLAYER do
+  run_system("mkdir -p '#{Pathname.new(SIMULATOR_MERGED_LIBRARY).parent.to_s}'")
+  run_system("rm -rf '#{SIMULATOR_MERGED_LIBRARY}'")
+  libfiles = files("#{SIMULATOR_BUILD_PATH}/*/lib*.a").join(" ")
+  run_system("libtool -static -o '#{SIMULATOR_MERGED_LIBRARY}' #{libfiles}")
+end
+
+#
+# Build the version of the player lib that Xcode didn't build
+#
+# The SpriteBuilder target is configured in Xcode with a direct dependency on EmbeddedPlayer which
+# randomly builds either the simulator or device version of the player. This quirk is taken
+# advantage of in two ways:
+#
+# 1) We can piggy back on Xcode's dependency logic so that we don't build the simulator version unnecessarily,
+# 2) we only have to build the simulator version since the device version has already been built by Xcode
+#
+#
+# The main trick is in determining whether Xcode built the device or simulator version. This is determined using
+# the following logic:
+#
+# a) If the simulator player is newer than its merged .a, then Xcode just built the simulator version and we only need to build the device version
+#
+#   otherwise, the opposite is true:
+#
+# b) If the device player is newer than its merged .a, then Xcode just built the device version and we only need to build the simulator version
+#
+task :other_player do
+    if File.exist?(SIMULATOR_PLAYER) && !uptodate?(SIMULATOR_MERGED_LIBRARY, [SIMULATOR_PLAYER])
+        puts "Building device player"
+
+        cmd = "xcodebuild -workspace '../#{ENV['PROJECT_NAME']}.xcworkspace' -scheme '#{PLAYER_NAME}' -configuration '#{ENV['CONFIGURATION']}' -sdk iphoneos ONLY_ACTIVE_ARCH=NO BUILD_DIR='#{ENV['BUILD_DIR']}' BUILD_ROOT='#{ENV['BUILD_ROOT']}' build"
+        run_system(cmd)
+
+    elsif File.exist?(DEVICE_PLAYER) && !uptodate?(DEVICE_MERGED_LIBRARY, [DEVICE_PLAYER])
+        puts "building simulator player"
+
+        cmd = "xcodebuild -workspace '../#{ENV['PROJECT_NAME']}.xcworkspace' -scheme '#{PLAYER_NAME}' -configuration '#{ENV['CONFIGURATION']}' -sdk iphonesimulator ARCHS='x86_64 i386' ONLY_ACTIVE_ARCH=NO BUILD_DIR='#{ENV['BUILD_DIR']}' BUILD_ROOT='#{ENV['BUILD_ROOT']}' build"
+
+        run_system(cmd)
+    else
+      puts "device and simulator player both up to date"
+    end
+end
+
+# When cleaning, Xcode will invoke this Makefile with ACTION="clean" which will run this target
+task :clean do |t|
+  run_system("rm -rf '#{UNIVERSAL_BUILD_PATH}' '#{SIMULATOR_BUILD_PATH}'")
+  run_system("rm -rf '#{DEVICE_MERGED_LIBRARY}'")
+end

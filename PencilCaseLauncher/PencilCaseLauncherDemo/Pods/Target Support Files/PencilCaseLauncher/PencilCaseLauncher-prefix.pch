@@ -1,0 +1,31 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+// Platform defines. TARGET_OS_MAC is defined on iOS so this makes it easier to detect iOS.
+#if TARGET_IPHONE_SIMULATOR
+#define PC_PLATFORM_IOS
+#elif TARGET_OS_IPHONE
+#define PC_PLATFORM_IOS
+#elif TARGET_OS_MAC
+#define PC_PLATFORM_MAC
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <SpriteKit/SpriteKit.h>
+#import <PSAlertView/PSPDFAlertView.h>
+#import <PencilCaseLauncher/CommonUtils.h>
+
+#import <PencilCaseLauncher/CCBAnimationManager.h>
+#import <PencilCaseLauncher/CGPointUtilities.h>
+#import <PencilCaseLauncher/CCBuilderReader.h>
+#endif

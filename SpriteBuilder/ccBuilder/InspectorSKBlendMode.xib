@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.8"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InspectorSKBlendMode">
+            <connections>
+                <outlet property="view" destination="8H8-BY-hUO" id="XCP-7M-9hG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="8H8-BY-hUO">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Rs-29-uKF">
+                    <rect key="frame" x="6" y="28" width="82" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" placeholder="YES" id="7iO-8S-Cd8"/>
+                        <constraint firstAttribute="width" constant="78" placeholder="YES" id="WC4-39-j5Y"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="4wR-W6-oVN">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.1739130435" green="0.1739130435" blue="0.1739130435" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-c6-3RL">
+                    <rect key="frame" x="5" y="5" width="224" height="22"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="iH4-2b-XSo">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="Repeat Options" id="VuA-sb-ccI">
+                            <items>
+                                <menuItem title="Alpha" id="CEV-bV-pNN"/>
+                                <menuItem isSeparatorItem="YES" id="Dd6-pu-F8X"/>
+                                <menuItem title="Add" tag="1" id="L2D-S2-sVb"/>
+                                <menuItem title="Subtract" tag="2" id="N6o-7c-NyS"/>
+                                <menuItem title="Multiply" tag="3" id="tui-iU-eDc"/>
+                                <menuItem title="MultiplyX2" tag="4" id="wf3-Eu-7bV"/>
+                                <menuItem title="Screen" tag="5" id="gHR-Gn-al1"/>
+                                <menuItem title="Replace" tag="6" id="gc1-wD-a1q"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="selectedTag" keyPath="self.blendModeTag" id="sFF-Y4-Vs0"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="SY2-c6-3RL" firstAttribute="top" secondItem="6Rs-29-uKF" secondAttribute="bottom" constant="2" id="CBo-qY-632"/>
+                <constraint firstAttribute="trailing" secondItem="SY2-c6-3RL" secondAttribute="trailing" constant="7" id="LLP-Go-iVb"/>
+                <constraint firstItem="SY2-c6-3RL" firstAttribute="leading" secondItem="8H8-BY-hUO" secondAttribute="leading" constant="8" id="cer-oC-BXJ"/>
+                <constraint firstItem="6Rs-29-uKF" firstAttribute="top" secondItem="8H8-BY-hUO" secondAttribute="top" id="cz1-ps-ssD"/>
+                <constraint firstItem="6Rs-29-uKF" firstAttribute="leading" secondItem="8H8-BY-hUO" secondAttribute="leading" constant="8" id="mAC-6l-wae"/>
+            </constraints>
+            <point key="canvasLocation" x="36.5" y="349"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="QYZ-4t-Aja"/>
+    </objects>
+</document>

@@ -1,0 +1,5 @@
+{
+    "title" : "Gestures - Pan",
+    "description" : "Adds a callback function called when a pan occurs.",
+    "code" : "this.addPanRecognizerWithHandlers(function(beginEventInfo) {\n}, function(changedEventInfo) {\n}, function(endedEventInfo) {\n});"
+}

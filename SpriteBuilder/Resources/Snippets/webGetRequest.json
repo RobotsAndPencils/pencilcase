@@ -1,0 +1,5 @@
+{
+    "title" : "Web - Get Request",
+    "description" : "Performs a GET request for the provided URL, with success and failure callbacks",
+    "code" : "Request.get('http://url/json', {}, function(response) {\n}, function(error) {\n});"
+}

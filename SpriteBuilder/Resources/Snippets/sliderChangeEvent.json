@@ -1,0 +1,5 @@
+{
+    "title" : "Slider - Change Handler",
+    "description" : "Run some code when a sliders currentValue changes.",
+    "code" : "MySlider.addChangeHandler(function(value) {\n    MyLabel.string = parseInt(value, 10);\n});"
+}

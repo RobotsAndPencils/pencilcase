@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCStringExpressionInspector">
+            <connections>
+                <outlet property="textField" destination="EVH-LC-XId" id="0eC-y8-h32"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EVH-LC-XId">
+                    <rect key="frame" x="8" y="8" width="233" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="IsQ-dh-rEK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.string" id="a2G-dF-ELH"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="EVH-LC-XId" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="Ipx-53-G8f"/>
+                <constraint firstItem="EVH-LC-XId" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="L2Y-vd-mmf"/>
+                <constraint firstAttribute="bottom" secondItem="EVH-LC-XId" secondAttribute="bottom" constant="8" id="SQQ-YS-7J6"/>
+                <constraint firstAttribute="trailing" secondItem="EVH-LC-XId" secondAttribute="trailing" constant="8" id="x1s-Cl-zx8"/>
+            </constraints>
+            <point key="canvasLocation" x="145.5" y="347"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="9KR-dO-QLO"/>
+    </objects>
+</document>

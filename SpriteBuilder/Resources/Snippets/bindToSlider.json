@@ -1,0 +1,5 @@
+{
+    "title" : "Slider - Bind to Value",
+    "description" : "Bind to the value of a slider.",
+    "code" : "MySlider.bind('currentValue', MyLabel, 'string', function(value) {\n    return parseInt(value, 10);\n}, function(value) {\n    return value.toString();\n});"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Scroll View</string>
+	<key>javaScriptClassName</key>
+	<string>ScrollView</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string>Create a scrollable area.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<true/>
+	<key>className</key>
+	<string>PCScrollViewNode</string>
+	<key>editorClassName</key>
+	<string>PCScrollViewNode</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCSKScrollViewNode</string>
+	<key>actionChangeableProperties</key>
+	<array/>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Scroll View</string>
+			<key>name</key>
+			<string>Scroll View</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Paging enabled</string>
+			<key>name</key>
+			<string>pagingEnabled</string>
+			<key>type</key>
+			<string>Check</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>User scroll enabled</string>
+			<key>name</key>
+			<string>userScrollEnabled</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>default</key>
+			<true/>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>Degrees</string>
+			<key>name</key>
+			<string>rotation</string>
+			<key>displayName</key>
+			<string>Rotation</string>
+		</dict>
+		<dict>
+			<key>animatable</key>
+			<false/>
+			<key>type</key>
+			<string>ScaleLock</string>
+			<key>name</key>
+			<string>scale</string>
+			<key>displayName</key>
+			<string>Scale</string>
+			<key>readOnly</key>
+			<string>YES</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>300</integer>
+				<integer>300</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>Scroll View</string>
+			<key>type</key>
+			<string>StringSimple</string>
+			<key>name</key>
+			<string>name</string>
+			<key>displayName</key>
+			<string>Name</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>Anchor point</string>
+		</dict>
+	</array>
+	<key>spriteFrameDrop</key>
+	<dict>
+		<key>className</key>
+		<string>PCSprite</string>
+		<key>property</key>
+		<string>spriteFrame</string>
+	</dict>
+</dict>
+</plist>

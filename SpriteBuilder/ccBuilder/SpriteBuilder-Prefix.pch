@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'ccBuilder' target in the 'ccBuilder' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import "PCTargetConditionals.h"
+	#import "Constants.h"
+    #import <PencilCaseLauncher/CommonUtils.h>
+    #import <Underscore.m/Underscore.h>
+#endif

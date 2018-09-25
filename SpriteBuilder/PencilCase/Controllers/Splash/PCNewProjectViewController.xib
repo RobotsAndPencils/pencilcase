@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCNewProjectViewController">
+            <connections>
+                <outlet property="basicLabel" destination="3mk-1W-wUT" id="rBq-ZW-WcP"/>
+                <outlet property="comingSoonLabel" destination="ZrO-BG-QW8" id="E9W-EB-xTz"/>
+                <outlet property="iPadLandscapeButton" destination="wWf-Gs-yzC" id="qnk-kn-eeY"/>
+                <outlet property="iPadPortraitButton" destination="uqq-fu-YDp" id="Xc3-fB-FPx"/>
+                <outlet property="iPhoneLandscapeButton" destination="gta-9Z-jbC" id="xol-LH-COR"/>
+                <outlet property="iPhonePortraitButton" destination="Z8i-nT-s2y" id="jAY-ey-nbg"/>
+                <outlet property="ipadLabel1" destination="adT-hv-nno" id="Kzt-VJ-eIN"/>
+                <outlet property="ipadLabel2" destination="0KP-hk-fAZ" id="U6K-K0-KQc"/>
+                <outlet property="iphoneLabel1" destination="opP-hU-PW0" id="NMN-LN-8Ty"/>
+                <outlet property="iphoneLabel2" destination="CKI-3N-mca" id="Xjm-8K-IoQ"/>
+                <outlet property="landscapeLabel1" destination="m9G-Vg-1uV" id="p68-9m-PWZ"/>
+                <outlet property="landscapeLabel2" destination="5MG-hS-JHg" id="v8s-jm-C5M"/>
+                <outlet property="portraitLabel1" destination="RXM-aP-IH4" id="mBd-0X-PZ8"/>
+                <outlet property="portraitLabel2" destination="bOV-jX-1GT" id="tKe-vY-wXm"/>
+                <outlet property="selectCanvaslabel" destination="6e9-ab-nCp" id="fMp-3e-8yQ"/>
+                <outlet property="templateLabel" destination="QDN-DT-U7I" id="AEP-ff-Bsl"/>
+                <outlet property="templateLabel1" destination="JUm-0p-fUK" id="ZwZ-xM-rTn"/>
+                <outlet property="templateLabel2" destination="kjp-nT-qgE" id="cKj-MU-X5z"/>
+                <outlet property="templateLabel4" destination="bDM-yC-BgM" id="dG1-aa-7QL"/>
+                <outlet property="templateLabel5" destination="56s-7l-ae7" id="eJv-1S-ajb"/>
+                <outlet property="templateLabel6" destination="eaI-zC-qV9" id="Tns-C2-XCK"/>
+                <outlet property="templateLabel7" destination="8gq-PY-QEW" id="nnk-JH-GhQ"/>
+                <outlet property="titleLabel" destination="IN6-cf-iht" id="G7Y-fY-B30"/>
+                <outlet property="view" destination="fCG-rv-Ob7" id="Qxa-ts-dQ9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="fCG-rv-Ob7">
+            <rect key="frame" x="0.0" y="0.0" width="882" height="544"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-Vz-nla">
+                    <rect key="frame" x="0.0" y="4" width="882" height="540"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Card_background" id="mWv-hj-oXf"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqd-fK-sHk">
+                    <rect key="frame" x="702" y="115" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PC_TemplateIcon_SocialGesture" id="gwz-8F-sTq"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mG-33-h7V">
+                    <rect key="frame" x="648" y="94" width="162" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Social and Gestural UIs" id="fcd-vw-cu8">
+                        <font key="font" size="10" name="HelveticaNeue"/>
+                        <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="itQ-x3-cRu">
+                    <rect key="frame" x="-4" y="495" width="48" height="48"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Close_Recents_Icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="sUn-DV-7KL">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeWindow:" target="-2" id="aeG-Hg-fw0"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUm-0p-fUK">
+                    <rect key="frame" x="598" y="282" width="48" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Blank" id="Mmi-Yf-tj4">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="0.67450980392156867" green="0.25490196078431371" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKb-1X-RM2">
+                    <rect key="frame" x="-8" y="77" width="579" height="308"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="GreyDeviceSelection" id="G1R-Oe-J6e"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1D-hI-2WT">
+                    <rect key="frame" x="571" y="365" width="340" height="20"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Grey_divider_templates" id="Wp0-b5-s5k"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jvb-Mb-sWO">
+                    <rect key="frame" x="571" y="258" width="340" height="20"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Grey_divider_templates" id="UzD-jN-Px9"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6e9-ab-nCp">
+                    <rect key="frame" x="128" y="401" width="321" height="27"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Select Your Canvas" id="hbq-CH-KNv">
+                        <font key="font" metaFont="systemBold" size="22"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynO-nf-ZPu">
+                    <rect key="frame" x="0.0" y="77" width="882" height="1"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Divider_Horizontal" id="KpQ-Pl-7u4"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-WA-cCK">
+                    <rect key="frame" x="-1" y="213" width="573" height="1"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Divider_Horizontal" id="hkF-Pd-Li6"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4PJ-Qb-k1M">
+                    <rect key="frame" x="571" y="78" width="1" height="365"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Divider_vertical" id="r4o-HZ-Fmo"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-cf-iht">
+                    <rect key="frame" x="138" y="467" width="624" height="66"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Almost there..." id="cD2-v6-Xmo">
+                        <font key="font" metaFont="system" size="46"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-1W-wUT">
+                    <rect key="frame" x="625" y="366" width="209" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Basic" id="KMg-eA-ENU">
+                        <font key="font" metaFont="cellTitle"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYU-wg-SAi">
+                    <rect key="frame" x="715" y="11" width="150" height="59"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Done_button_on" imagePosition="overlaps" alignment="center" alternateImage="Done_button_on" imageScaling="proportionallyDown" inset="2" id="mJr-rw-EDy">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system" size="20"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buildCreation:" target="-2" id="yUA-j2-rVR"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="uqq-fu-YDp">
+                    <rect key="frame" x="57" y="242" width="88" height="127"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="ipad_portrait" imagePosition="overlaps" alignment="center" alternateImage="ipad_portrait_selected" imageScaling="proportionallyDown" inset="2" id="8yZ-It-xhU">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setSelectedDeviceAndOrientationSetting:" target="-2" id="6mL-uI-gna"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="wWf-Gs-yzC">
+                    <rect key="frame" x="286" y="241" width="116" height="92"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="ipad_land" imagePosition="overlaps" alignment="center" alternateImage="ipad_land_selected" imageScaling="proportionallyDown" inset="2" id="ih1-KI-IIA">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setSelectedDeviceAndOrientationSetting:" target="-2" id="I3H-6A-l57"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="adT-hv-nno">
+                    <rect key="frame" x="171" y="266" width="44" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iPad" id="a0L-ge-rQ9">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699453557" green="0.30152834699453557" blue="0.30152834699453557" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXM-aP-IH4">
+                    <rect key="frame" x="171" y="247" width="76" height="15"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Portrait" id="yMO-FZ-VuD">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0KP-hk-fAZ">
+                    <rect key="frame" x="424" y="266" width="44" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iPad" id="wsp-9b-mB1">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9G-Vg-1uV">
+                    <rect key="frame" x="424" y="244" width="85" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Landscape" id="HTi-co-Hjo">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKI-3N-mca">
+                    <rect key="frame" x="424" y="120" width="56" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iPhone" id="vG9-yF-mFo">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-hS-JHg">
+                    <rect key="frame" x="424" y="98" width="85" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Landscape" id="EIv-sZ-SBX">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opP-hU-PW0">
+                    <rect key="frame" x="171" y="120" width="56" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iPhone" id="y2B-uP-zEy">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOV-jX-1GT">
+                    <rect key="frame" x="171" y="99" width="61" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Portrait" id="jdu-iO-uyv">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" red="0.30152834699999997" green="0.30152834699999997" blue="0.30152834699999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-Dv-qOQ">
+                    <rect key="frame" x="-4" y="384" width="912" height="1"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Divider_Horizontal" id="lqJ-va-IJT"/>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-nT-s2y">
+                    <rect key="frame" x="78" y="99" width="47" height="96"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="iphone_port" imagePosition="overlaps" alignment="center" alternateImage="iphone_port_selected" imageScaling="proportionallyDown" inset="2" id="9EJ-Hz-0vK">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setSelectedDeviceAndOrientationSetting:" target="-2" id="7Os-7P-2U5"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="gta-9Z-jbC">
+                    <rect key="frame" x="296" y="99" width="96" height="49"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="iphone_land" imagePosition="overlaps" alignment="center" alternateImage="iphone_land_selected" imageScaling="proportionallyDown" inset="2" id="n2b-dB-KgL">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setSelectedDeviceAndOrientationSetting:" target="-2" id="das-of-j5x"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEW-L6-7y9">
+                    <rect key="frame" x="595" y="303" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Template_selected" id="sOK-GI-ZcO"/>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9T-DV-4Qk">
+                    <rect key="frame" x="14" y="11" width="150" height="59"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Close_button" imagePosition="overlaps" alignment="center" alternateImage="Close_button_on" imageScaling="proportionallyDown" inset="2" id="Gra-Z1-iGD">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system" size="20"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancelNewCreation:" target="-2" id="Ved-Gn-h5x"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-nT-qgE">
+                    <rect key="frame" x="585" y="172" width="75" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Enterprise" id="Ke8-jq-fxg">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56s-7l-ae7">
+                    <rect key="frame" x="577" y="92" width="91" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Presentation" id="oKu-iA-llp">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-PY-QEW">
+                    <rect key="frame" x="790" y="92" width="78" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="EDU" id="lY9-3V-W98">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oc9-va-81m">
+                    <rect key="frame" x="702" y="194" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PC_TemplateIcon_Animation" id="LeB-qO-DTu"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZuY-eV-L48">
+                    <rect key="frame" x="802" y="115" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PC_TemplateIcon_Education" id="KBy-Up-uHJ"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g83-gb-rrV">
+                    <rect key="frame" x="595" y="194" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PC_TemplateIcon_Enterprise" id="GD5-x6-0Xs"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrO-BG-QW8">
+                    <rect key="frame" x="625" y="256" width="209" height="20"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Coming Soon" id="y3J-BT-2uu">
+                        <font key="font" metaFont="cellTitle"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-DT-U7I">
+                    <rect key="frame" x="625" y="401" width="209" height="27"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Templates" id="V5y-mO-Lx4">
+                        <font key="font" metaFont="systemBold" size="22"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-yC-BgM">
+                    <rect key="frame" x="655" y="171" width="148" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Animation/Simulation" id="JQj-WT-POM">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaI-zC-qV9">
+                    <rect key="frame" x="794" y="171" width="71" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shopping" id="Z1o-eJ-I9J">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5T-6l-K6V">
+                    <rect key="frame" x="802" y="194" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PC_TemplateIcon_Shopping" id="jGW-Le-QdC"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqp-uf-afT">
+                    <rect key="frame" x="595" y="115" width="54" height="54"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PC_TemplateIcon_Presentation" id="pQ6-uj-C7x"/>
+                </imageView>
+            </subviews>
+            <point key="canvasLocation" x="256" y="858"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Card_background" width="882" height="540"/>
+        <image name="Close_Recents_Icon" width="18" height="18"/>
+        <image name="Close_button" width="150" height="52"/>
+        <image name="Close_button_on" width="150" height="52"/>
+        <image name="Divider_Horizontal" width="340" height="1"/>
+        <image name="Divider_vertical" width="1" height="437"/>
+        <image name="Done_button_on" width="150" height="52"/>
+        <image name="GreyDeviceSelection" width="579" height="312"/>
+        <image name="Grey_divider_templates" width="340" height="20"/>
+        <image name="PC_TemplateIcon_Animation" width="54" height="54"/>
+        <image name="PC_TemplateIcon_Education" width="54" height="54"/>
+        <image name="PC_TemplateIcon_Enterprise" width="54" height="54"/>
+        <image name="PC_TemplateIcon_Presentation" width="54" height="54"/>
+        <image name="PC_TemplateIcon_Shopping" width="54" height="54"/>
+        <image name="PC_TemplateIcon_SocialGesture" width="54" height="54"/>
+        <image name="Template_selected" width="54" height="54"/>
+        <image name="ipad_land" width="116" height="82"/>
+        <image name="ipad_land_selected" width="116" height="82"/>
+        <image name="ipad_portrait" width="82" height="116"/>
+        <image name="ipad_portrait_selected" width="82" height="116"/>
+        <image name="iphone_land" width="93" height="47"/>
+        <image name="iphone_land_selected" width="93" height="47"/>
+        <image name="iphone_port" width="47" height="93"/>
+        <image name="iphone_port_selected" width="47" height="93"/>
+    </resources>
+</document>

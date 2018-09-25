@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InspectorTimelineRepeat">
+            <connections>
+                <outlet property="repeatPopupButton" destination="f1c-Re-ZFw" id="Fm8-FT-u4d"/>
+                <outlet property="view" destination="tLy-RM-e1k" id="Uti-Dq-MlC"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <userDefaultsController representsSharedInstance="YES" id="pMG-Oa-Tw7"/>
+        <customView id="tLy-RM-e1k">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ufj-HT-yqv">
+                    <rect key="frame" x="6" y="28" width="82" height="14"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" placeholder="YES" id="AdR-zH-H3b"/>
+                        <constraint firstAttribute="height" constant="14" placeholder="YES" id="c5A-WG-cTv"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="rYE-KD-NNR">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.1739130435" green="0.1739130435" blue="0.1739130435" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="displayName" id="ahl-wc-hTL"/>
+                    </connections>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Re-ZFw">
+                    <rect key="frame" x="5" y="5" width="224" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="None" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="LeX-gA-Sse" id="0AG-bH-A4A">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="Repeat Options" id="b9v-Rt-c2i">
+                            <items>
+                                <menuItem title="None" id="LeX-gA-Sse"/>
+                                <menuItem title="Loop" id="Tbm-Ca-IN6"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="f1c-Re-ZFw" secondAttribute="trailing" constant="7" id="FwT-lu-J58"/>
+                <constraint firstItem="f1c-Re-ZFw" firstAttribute="leading" secondItem="tLy-RM-e1k" secondAttribute="leading" constant="8" id="SGd-72-qmL"/>
+                <constraint firstItem="ufj-HT-yqv" firstAttribute="leading" secondItem="tLy-RM-e1k" secondAttribute="leading" constant="8" id="dVf-Gp-q1B"/>
+                <constraint firstItem="ufj-HT-yqv" firstAttribute="top" secondItem="tLy-RM-e1k" secondAttribute="top" id="jv6-5q-8nw"/>
+                <constraint firstItem="f1c-Re-ZFw" firstAttribute="top" secondItem="ufj-HT-yqv" secondAttribute="bottom" constant="2" id="xZS-E2-cdp"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

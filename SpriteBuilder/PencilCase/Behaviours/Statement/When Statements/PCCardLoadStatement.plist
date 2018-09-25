@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>representationTemplate</key>
+	<string>Creation.currentCard().on('loaded', function({{{ exposedTokens }}}) {\n{{{ thens }}}\n})</string>
+	<key>analyticsString</key>
+	<string>When Card Loaded</string>
+</dict>
+</plist>

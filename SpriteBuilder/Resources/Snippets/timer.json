@@ -1,0 +1,5 @@
+{
+    "title" : "Timer",
+    "description" : "Calls a function after a delay (seconds), optionally repeating and with an array of arguments.",
+    "code" : "Timer.evaluateFunctionWithDelay(function() { // This will be run in one second, repeating each second }, 1, true, []);"
+}

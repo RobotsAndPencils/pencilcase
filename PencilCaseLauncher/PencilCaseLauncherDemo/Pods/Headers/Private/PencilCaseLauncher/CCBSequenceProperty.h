@@ -1,0 +1,1 @@
+../../../../../Source/CocosBuilder/CCBSequenceProperty.h

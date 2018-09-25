@@ -1,0 +1,5 @@
+{
+    "title" : "Gestures - Double Tap",
+    "description" : "Adds a callback function called when a double tap occurs.",
+    "code" : "this.addDoubleTapRecognizerWithHandler(function(eventInfo) {\n});"
+}

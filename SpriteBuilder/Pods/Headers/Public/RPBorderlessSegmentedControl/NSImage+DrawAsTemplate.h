@@ -1,0 +1,1 @@
+../../../RPBorderlessSegmentedControl/Categories/NSImage+DrawAsTemplate.h

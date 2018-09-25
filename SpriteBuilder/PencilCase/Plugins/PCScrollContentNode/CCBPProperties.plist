@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Scroll Content</string>
+	<key>javaScriptClassName</key>
+	<string>ScrollContentView</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string></string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<true/>
+	<key>className</key>
+	<string>PCScrollContentNode</string>
+	<key>editorClassName</key>
+	<string>PCScrollContentNode</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCSKScrollContentNode</string>
+	<key>requireParentClass</key>
+	<string>PCScrollViewNode</string>
+	<key>properties</key>
+	<array/>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>animatable</key>
+			<false/>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>Degrees</string>
+			<key>name</key>
+			<string>rotation</string>
+			<key>displayName</key>
+			<string>Rotation</string>
+		</dict>
+		<dict>
+			<key>animatable</key>
+			<false/>
+			<key>type</key>
+			<string>ScaleLock</string>
+			<key>name</key>
+			<string>scale</string>
+			<key>displayName</key>
+			<string>Scale</string>
+			<key>readOnly</key>
+			<string>YES</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>Scroll Content</string>
+			<key>type</key>
+			<string>StringSimple</string>
+			<key>name</key>
+			<string>name</string>
+			<key>displayName</key>
+			<string>Name</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>Anchor Point</string>
+		</dict>
+	</array>
+	<key>spriteFrameDrop</key>
+	<dict>
+		<key>className</key>
+		<string>PCSprite</string>
+		<key>property</key>
+		<string>spriteFrame</string>
+	</dict>
+	<key>actionChangeableProperties</key>
+	<array/>
+</dict>
+</plist>

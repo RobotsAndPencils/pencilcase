@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Camera and Photos</string>
+	<key>javaScriptClassName</key>
+	<string>CameraCaptureView</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string>Allow your creation to access the device&apos;s camera and photo library.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCCameraCaptureNode</string>
+	<key>editorClassName</key>
+	<string>PCCameraCaptureNode</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCSKCameraCaptureNode</string>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>hidden</key>
+			<true/>
+			<key>displayName</key>
+			<string>Camera Capture</string>
+			<key>name</key>
+			<string>PCCameraCaptureNode</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>animatable</key>
+			<true/>
+			<key>default</key>
+			<string></string>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Background Image</string>
+			<key>type</key>
+			<string>SpriteFrame</string>
+			<key>name</key>
+			<string>spriteFrame</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>324</integer>
+				<integer>200</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>Camera Capture</string>
+			<key>type</key>
+			<string>StringSimple</string>
+			<key>name</key>
+			<string>name</string>
+			<key>displayName</key>
+			<string>Name</string>
+		</dict>
+	</array>
+	<key>actionChangeableProperties</key>
+	<array/>
+</dict>
+</plist>

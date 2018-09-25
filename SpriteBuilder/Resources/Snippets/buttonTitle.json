@@ -1,0 +1,5 @@
+{
+    "title" : "Button - Set Title",
+    "description" : "Set the title of a button.",
+    "code" : "button.title = 'New Title';"
+}

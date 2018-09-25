@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCPopUpExpressionInspector">
+            <connections>
+                <outlet property="popUpButton" destination="ivl-qo-nPZ" id="ps5-jF-CCs"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivl-qo-nPZ">
+                    <rect key="frame" x="7" y="5" width="211" height="26"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="VlY-hC-hMG">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="TgM-zu-pjq">
+                            <items>
+                                <menuItem title="Item 1" id="VlG-8B-Xjh"/>
+                                <menuItem title="Item 2" id="9Tp-UW-qvm"/>
+                                <menuItem title="Item 3" id="har-Di-MB4"/>
+                            </items>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="5D5-Ly-BOd"/>
+                            </connections>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="selectItem:" target="-2" id="UK3-oA-IQ1"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ivl-qo-nPZ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="8Wa-Ex-YgV"/>
+                <constraint firstAttribute="bottom" secondItem="ivl-qo-nPZ" secondAttribute="bottom" constant="8" id="9dd-Ju-J3v"/>
+                <constraint firstAttribute="trailing" secondItem="ivl-qo-nPZ" secondAttribute="trailing" constant="8" id="EQW-EY-YZw"/>
+                <constraint firstItem="ivl-qo-nPZ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="Jz5-n7-jVg"/>
+            </constraints>
+            <point key="canvasLocation" x="289.5" y="353"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Hwx-zZ-eST"/>
+    </objects>
+</document>

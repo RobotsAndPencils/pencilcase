@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>representationTemplate</key>
+	<string>(function() { Event.trigger({{{ eventExpression }}}); Creation.postNativeNotification({{{ eventExpression }}}); })()</string>
+	<key>analyticsString</key>
+	<string>Then Fire Custom Event</string>
+</dict>
+</plist>

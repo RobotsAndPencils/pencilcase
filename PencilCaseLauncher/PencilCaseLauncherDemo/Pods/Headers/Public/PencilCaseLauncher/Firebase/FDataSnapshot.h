@@ -1,0 +1,1 @@
+../../../../../../Frameworks/Firebase.framework/Versions/A/Headers/FDataSnapshot.h

@@ -1,0 +1,38 @@
+source "https://github.com/CocoaPods/Specs.git"
+
+
+platform :osx, "10.9"
+
+project "SpriteBuilder", "Prod Release" => :release
+project "SpriteBuilder", "Staging Release" => :release
+
+inhibit_all_warnings!
+
+target "SpriteBuilder" do
+    pod "AFNetworking", "~> 2.6"
+    pod "SSZipArchive", "~> 0.3"
+    pod "BFColorPickerPopover", :git => "git@github.com:RobotsAndPencils/BFColorPickerPopover", :branch => "master", :inhibit_warnings => true
+    pod "MMMarkdown", "~> 0.3"
+    pod "RPBorderlessSegmentedControl", "~> 1.0"
+    pod "RPInstantAlpha", "~> 1.0"
+    pod "Underscore.m", "~> 0.2"
+    pod "PureLayout", "~> 1.0"
+    pod "GRMustache", "~> 7.2.0"
+    pod "Mantle", "~> 1.5"
+    pod 'INPopoverController', :git => "git@github.com:RobotsAndPencils/INPopoverController", :branch => "allow-uncentered-arrow", :inhibit_warnings => true
+    pod "UICKeyChainStore", "~> 1.1"
+    pod "FileMD5Hash", "~> 2.0"
+    pod 'FormatterKit', '~> 1.8'
+    pod 'TransitionKit', '2.2.0'
+
+    target "PencilCase Tests" do
+        pod "Kiwi", "~> 2.3"
+    end
+end
+
+target "EmbeddedPlayer" do
+    platform :ios, "8.0"
+    inhibit_all_warnings!
+
+    pod 'PencilCaseLauncher', :path => '..'
+end

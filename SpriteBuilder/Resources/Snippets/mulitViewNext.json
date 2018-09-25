@@ -1,0 +1,5 @@
+{
+    "title" : "Multi View - Next View",
+    "description" : "Focuses the next view in the Multi View",
+    "code" : "MyMultiView.nextView();"
+}

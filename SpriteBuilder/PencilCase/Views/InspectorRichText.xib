@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InspectorRichText">
+            <connections>
+                <outlet property="boldButton" destination="Nhr-7F-Oj9" id="30l-Hy-lih"/>
+                <outlet property="centerAlignedButton" destination="tQm-Ne-wea" id="2S4-Op-Lp1"/>
+                <outlet property="fontSizeField" destination="yH5-dr-DnA" id="SyZ-G6-Llj"/>
+                <outlet property="fontlistPopupButton" destination="htl-su-fWe" id="rgE-zf-TDC"/>
+                <outlet property="italicsButton" destination="XH4-Nu-I4l" id="8ey-0C-TO0"/>
+                <outlet property="justifiedAlignedButton" destination="1jE-Fe-8wF" id="m0O-i1-IgQ"/>
+                <outlet property="leftAlignedButton" destination="DdG-V7-hHD" id="xdc-zF-lrT"/>
+                <outlet property="rightAlignedButton" destination="ArX-qk-ygX" id="7Zh-dD-0a2"/>
+                <outlet property="textColorWell" destination="XmQ-DM-nAj" id="qN0-AI-G4j"/>
+                <outlet property="underlinedButton" destination="0MO-R1-6qn" id="KOh-rd-44Y"/>
+                <outlet property="view" destination="1" id="UtC-hp-3Tz"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="149"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" id="Nhr-7F-Oj9">
+                    <rect key="frame" x="20" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="B" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1l8-sx-R6G">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" size="12" name="HelveticaNeue-Bold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="boldButtonClicked:" target="-2" id="WU6-g7-Pp5"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="fNn-po-HCQ"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="0MO-R1-6qn">
+                    <rect key="frame" x="75" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="U" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjL-Wo-UAZ">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" size="13" name="HelveticaNeue"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="underlineButtonClicked:" target="-2" id="59O-64-4cQ"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="jhx-X4-zEQ"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="DdG-V7-hHD">
+                    <rect key="frame" x="110" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="text-alignment-right-template" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K43-Vn-iHU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="alignmentButtonClicked:" target="-2" id="qys-Bi-Yjm"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="QJL-9d-QkN"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" tag="2" id="tQm-Ne-wea">
+                    <rect key="frame" x="138" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="text-alignment-center-template" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u9c-V9-aBe">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="alignmentButtonClicked:" target="-2" id="uAe-c8-esl"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="CpO-s3-uzX"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" tag="1" id="ArX-qk-ygX">
+                    <rect key="frame" x="165" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="text-alignment-left-template" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mUG-el-URe">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="alignmentButtonClicked:" target="-2" id="Y4Z-q8-zEM"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="MdL-TQ-Ra7"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" tag="3" id="1jE-Fe-8wF">
+                    <rect key="frame" x="193" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="text-alignment-justified-template" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mbf-8w-Wra">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="alignmentButtonClicked:" target="-2" id="CXh-9K-ywM"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="Nty-G1-jBP"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="E7V-1d-tI3">
+                    <rect key="frame" x="18" y="41" width="85" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Font size" id="Csr-vT-dhP">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Ssh-AP-S2H">
+                    <rect key="frame" x="18" y="10" width="85" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Text color" id="wU0-M9-6cH">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="yH5-dr-DnA" customClass="PCTextFieldStepper">
+                    <rect key="frame" x="110" y="38" width="112" height="22"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="O54-wk-zZb" customClass="PCTextFieldStepperCell">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="Khz-TW-Ex3"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <connections>
+                            <action selector="fontSizeChanged:" target="-2" id="BUk-fB-5cu"/>
+                        </connections>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="Kmk-0g-ReC"/>
+                    </connections>
+                </textField>
+                <colorWell id="XmQ-DM-nAj" customClass="BFPopoverColorWell">
+                    <rect key="frame" x="109" y="7" width="113" height="23"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="setTextColor:" target="-2" id="Ojd-F4-0Wn"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="qUF-wc-p4u"/>
+                    </connections>
+                </colorWell>
+                <popUpButton verticalHuggingPriority="750" id="htl-su-fWe">
+                    <rect key="frame" x="108" y="113" width="117" height="25"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wCz-WJ-FSn">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="kOy-Dx-lLh"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="setFont:" target="-2" id="HyT-Zc-Z4R"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="SEe-6U-8lp"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="R8H-Tg-g9g">
+                    <rect key="frame" x="18" y="118" width="38" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Font" id="TrK-WU-7Js">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" id="XH4-Nu-I4l">
+                    <rect key="frame" x="48" y="74" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" title="I" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wTX-c2-cDa">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" size="13" name="HelveticaNeue-Italic"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="italicsButtonClicked:" target="-2" id="0yi-Fo-bcL"/>
+                        <binding destination="-2" name="enabled" keyPath="self.enabled" id="OlJ-54-KZJ"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Zev-A1-eYF"/>
+    </objects>
+    <resources>
+        <image name="text-alignment-center-template" width="200" height="200"/>
+        <image name="text-alignment-justified-template" width="200" height="200"/>
+        <image name="text-alignment-left-template" width="200" height="200"/>
+        <image name="text-alignment-right-template" width="200" height="200"/>
+    </resources>
+</document>

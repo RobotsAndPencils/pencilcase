@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Table</string>
+	<key>javaScriptClassName</key>
+	<string>TableView</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string>Create scrollable lists or menus.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCTableNode</string>
+	<key>editorClassName</key>
+	<string>PCTableNode</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCSKTableNode</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>260</integer>
+				<integer>400</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Table</string>
+			<key>name</key>
+			<string>PCTableNode</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Enable Refresh Control</string>
+			<key>name</key>
+			<string>enableRefreshControl</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>backgroundColor</string>
+			<key>default</key>
+			<array>
+				<real>0.9</real>
+				<real>0.9</real>
+				<real>0.9</real>
+				<integer>1</integer>
+			</array>
+			<key>displayName</key>
+			<string>Background color</string>
+			<key>type</key>
+			<string>Color4</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>inspectorType</key>
+			<string>PCTableCells</string>
+			<key>displayName</key>
+			<string>Cells</string>
+			<key>type</key>
+			<string>Array</string>
+			<key>name</key>
+			<string>cells</string>
+		</dict>
+	</array>
+	<key>actionChangeableProperties</key>
+	<array/>
+</dict>
+</plist>

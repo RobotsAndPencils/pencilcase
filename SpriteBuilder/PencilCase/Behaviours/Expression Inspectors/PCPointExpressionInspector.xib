@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCPointExpressionInspector">
+            <connections>
+                <outlet property="firstValueStepper" destination="Ove-Ix-AQh" id="uzS-O3-ofg"/>
+                <outlet property="secondValueStepper" destination="gX1-q1-jTZ" id="mBs-cw-puB"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="168" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i5F-k2-DA6">
+                    <rect key="frame" x="8" y="33" width="135" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="BdJ-9b-dJa">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="42" maximumFractionDigits="2" id="f4n-ec-8LK">
+                            <metadata>
+                                <real key="inspectorSampleValue" value="2.3883299999999998"/>
+                            </metadata>
+                        </numberFormatter>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.firstValue" id="T5h-02-Fxf">
+                            <dictionary key="options">
+                                <bool key="NSValidatesImmediately" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </textField>
+                <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ove-Ix-AQh">
+                    <rect key="frame" x="144" y="31" width="19" height="27"/>
+                    <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="Ssd-Hx-9ES"/>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.firstValue" previousBinding="2HK-dV-t9v" id="Uh9-IY-or2"/>
+                        <binding destination="-2" name="maxValue" keyPath="self.maxValue" id="tIk-vy-ckh"/>
+                        <binding destination="-2" name="minValue" keyPath="self.minValue" previousBinding="tIk-vy-ckh" id="2HK-dV-t9v"/>
+                    </connections>
+                </stepper>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-5G-Xmw">
+                    <rect key="frame" x="8" y="8" width="135" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="aQb-K6-li2">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="42" maximumFractionDigits="2" id="6aX-D5-GbC">
+                            <metadata>
+                                <real key="inspectorSampleValue" value="2.3883299999999998"/>
+                            </metadata>
+                        </numberFormatter>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.secondValue" id="DMn-AL-mYe">
+                            <dictionary key="options">
+                                <bool key="NSValidatesImmediately" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </textField>
+                <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gX1-q1-jTZ">
+                    <rect key="frame" x="144" y="6" width="19" height="27"/>
+                    <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="xsi-fk-aMk"/>
+                    <connections>
+                        <binding destination="-2" name="maxValue" keyPath="self.maxValue" id="cNy-YK-Qe9"/>
+                        <binding destination="-2" name="minValue" keyPath="self.minValue" previousBinding="cNy-YK-Qe9" id="W3O-A1-e0y"/>
+                        <binding destination="-2" name="value" keyPath="self.secondValue" previousBinding="W3O-A1-e0y" id="Ncb-kn-GVj"/>
+                    </connections>
+                </stepper>
+            </subviews>
+            <constraints>
+                <constraint firstItem="RaP-5G-Xmw" firstAttribute="top" secondItem="i5F-k2-DA6" secondAttribute="bottom" constant="3" id="H9u-z5-5my"/>
+                <constraint firstAttribute="bottom" secondItem="RaP-5G-Xmw" secondAttribute="bottom" constant="8" id="QeT-ay-Hpl"/>
+                <constraint firstItem="i5F-k2-DA6" firstAttribute="centerY" secondItem="Ove-Ix-AQh" secondAttribute="centerY" constant="1" id="Vd4-ba-Lka"/>
+                <constraint firstAttribute="trailing" secondItem="Ove-Ix-AQh" secondAttribute="trailing" constant="8" id="bbT-iZ-SFw"/>
+                <constraint firstItem="gX1-q1-jTZ" firstAttribute="leading" secondItem="RaP-5G-Xmw" secondAttribute="trailing" constant="4" id="cce-xE-ZcL"/>
+                <constraint firstItem="i5F-k2-DA6" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="gGb-D6-hfL"/>
+                <constraint firstItem="RaP-5G-Xmw" firstAttribute="centerY" secondItem="gX1-q1-jTZ" secondAttribute="centerY" constant="1" id="gJ9-jI-xZv"/>
+                <constraint firstItem="RaP-5G-Xmw" firstAttribute="top" secondItem="i5F-k2-DA6" secondAttribute="bottom" constant="3" id="jTQ-i8-cwT"/>
+                <constraint firstItem="RaP-5G-Xmw" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="nfC-2l-tnU"/>
+                <constraint firstItem="Ove-Ix-AQh" firstAttribute="leading" secondItem="i5F-k2-DA6" secondAttribute="trailing" constant="4" id="v6w-JO-73E"/>
+                <constraint firstItem="i5F-k2-DA6" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="7" id="wTv-EZ-WFe"/>
+                <constraint firstAttribute="trailing" secondItem="gX1-q1-jTZ" secondAttribute="trailing" constant="8" id="wbc-QD-UY5"/>
+            </constraints>
+            <point key="canvasLocation" x="172" y="466"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="MKE-JR-yu6"/>
+    </objects>
+</document>

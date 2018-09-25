@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Share Button</string>
+	<key>javaScriptClassName</key>
+	<string>ShareButton</string>
+	<key>ordering</key>
+	<real>12000</real>
+	<key>description</key>
+	<string>A button that displays the sharing sheet</string>
+	<key>inheritsFrom</key>
+	<string>CCButton</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCShareButton</string>
+	<key>editorClassName</key>
+	<string>PCBShareButton</string>
+	<key>actionChangeableProperties</key>
+	<array/>
+	<key>editorSpriteKitClassName</key>
+	<string>PCBSKShareButton</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<string>Share</string>
+			<key>name</key>
+			<string>title</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array/>
+</dict>
+</plist>

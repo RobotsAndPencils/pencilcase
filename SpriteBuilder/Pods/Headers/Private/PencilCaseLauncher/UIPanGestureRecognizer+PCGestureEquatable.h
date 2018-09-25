@@ -1,0 +1,1 @@
+../../../../../PencilCaseLauncher/Source/Runtime/Categories/UIKit/UIPanGestureRecognizer+PCGestureEquatable.h

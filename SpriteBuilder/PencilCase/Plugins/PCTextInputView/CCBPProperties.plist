@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Text Input</string>
+	<key>javaScriptClassName</key>
+	<string>TextInput</string>
+	<key>ordering</key>
+	<real>4000</real>
+	<key>description</key>
+	<string>Capture multiple lines of user information.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCTextInputView</string>
+	<key>editorClassName</key>
+	<string>PCBTextInputView</string>
+	<key>editorSpriteKitClassName</key>
+	<string>PCBSKTextInputView</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>324</integer>
+				<integer>200</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>Anchor point</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Text Input</string>
+			<key>name</key>
+			<string>PCTextInputView</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>hidden</key>
+			<false/>
+			<key>default</key>
+			<string></string>
+			<key>displayName</key>
+			<string>Text</string>
+			<key>type</key>
+			<string>Text</string>
+			<key>name</key>
+			<string>text</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>resources/Icons/Text Field.png</string>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Background image</string>
+			<key>type</key>
+			<string>SpriteFrame</string>
+			<key>name</key>
+			<string>backgroundSpriteFrame</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>Helvetica</string>
+			<key>displayName</key>
+			<string>Font name</string>
+			<key>type</key>
+			<string>FontTTF</string>
+			<key>name</key>
+			<string>fontName</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>Float</string>
+			<key>dontSetInEditor</key>
+			<true/>
+			<key>name</key>
+			<string>fontSize</string>
+			<key>displayName</key>
+			<string>Font size</string>
+			<key>default</key>
+			<integer>17</integer>
+		</dict>
+	</array>
+	<key>actionChangeableProperties</key>
+	<array/>
+</dict>
+</plist>

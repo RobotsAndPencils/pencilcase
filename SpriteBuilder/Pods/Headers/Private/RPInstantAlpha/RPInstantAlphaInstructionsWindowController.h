@@ -1,0 +1,1 @@
+../../../RPInstantAlpha/Classes/RPInstantAlphaInstructionsWindowController.h

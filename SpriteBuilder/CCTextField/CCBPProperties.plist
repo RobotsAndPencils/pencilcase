@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Text Field</string>
+	<key>javaScriptClassName</key>
+	<string>TextField</string>
+	<key>ordering</key>
+	<integer>12000</integer>
+	<key>description</key>
+	<string>Capture a single line of user information. </string>
+	<key>inheritsFrom</key>
+	<string>CCControl</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>PCTextField</string>
+	<key>editorClassName</key>
+	<string>CCBPTextField</string>
+	<key>editorSpriteKitClassName</key>
+	<string>CCBPSKTextField</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>200</integer>
+				<integer>36</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>affectsProperties</key>
+			<array>
+				<string>maxSize</string>
+				<string>contentSize</string>
+			</array>
+			<key>readOnly</key>
+			<false/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>preferredSize</string>
+			<key>displayName</key>
+			<string>Preferred size</string>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>preferredSize</string>
+				<string>contentSize</string>
+			</array>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>maxSize</string>
+			<key>displayName</key>
+			<string>Max size</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>Degrees</string>
+			<key>name</key>
+			<string>rotation</string>
+			<key>displayName</key>
+			<string>Rotation</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<real>0.5</real>
+				<real>0.5</real>
+			</array>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>Anchor point</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Text Field</string>
+			<key>name</key>
+			<string>CCTextField</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>Check</string>
+			<key>default</key>
+			<false/>
+			<key>name</key>
+			<string>isSecureText</string>
+			<key>displayName</key>
+			<string>Is password field</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Text</string>
+			<key>name</key>
+			<string>string</string>
+			<key>hidden</key>
+			<true/>
+			<key>type</key>
+			<string>Text</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Keyboard Type</string>
+			<key>name</key>
+			<string>keyboardType</string>
+			<key>hidden</key>
+			<false/>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>extra</key>
+			<string>Default|0|ASCII|1|Numbers and Punctuation|2|URL|3|Number Pad|4|Phone Pad|5|Name and Phone Pad|6|E-mail Address|7|Decimal Pad|8|Twitter|9|Web Search|10|</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>resources/Icons/Text Field.png</string>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Background image</string>
+			<key>type</key>
+			<string>SpriteFrame</string>
+			<key>name</key>
+			<string>backgroundSpriteFrame</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>7</integer>
+				<integer>0</integer>
+			</array>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Padding</string>
+			<key>type</key>
+			<string>FloatScale</string>
+			<key>name</key>
+			<string>padding</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>fontSize</string>
+			<key>displayName</key>
+			<string>Font size</string>
+			<key>default</key>
+			<integer>17</integer>
+		</dict>
+	</array>
+	<key>actionChangeableProperties</key>
+	<array/>
+</dict>
+</plist>

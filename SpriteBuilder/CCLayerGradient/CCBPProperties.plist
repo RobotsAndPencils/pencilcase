@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayName</key>
+	<string>Color Gradient</string>
+	<key>javaScriptClassName</key>
+	<string>GradientView</string>
+	<key>ordering</key>
+	<real>5000</real>
+	<key>description</key>
+	<string>A resizable area filled with a color gradient.</string>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<true/>
+	<key>className</key>
+	<string>PCNodeGradient</string>
+	<key>spriteKitClassName</key>
+	<string>CCNodeGradient</string>
+	<key>editorClassName</key>
+	<string>CCBPNodeGradient</string>
+	<key>editorSpriteKitClassName</key>
+	<string>CCBPSKNodeGradient</string>
+	<key>actionChangeableProperties</key>
+	<array>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>startColor</string>
+					<key>displayName</key>
+					<string>Start Color</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>Start Color</string>
+			<key>inspectorType</key>
+			<string>Color</string>
+			<key>propertyName</key>
+			<string>startColor</string>
+		</dict>
+		<dict>
+			<key>inspectorLabels</key>
+			<array>
+				<dict>
+					<key>propertyName</key>
+					<string>endColor</string>
+					<key>displayName</key>
+					<string>End Color</string>
+				</dict>
+			</array>
+			<key>displayName</key>
+			<string>End Color</string>
+			<key>inspectorType</key>
+			<string>Color</string>
+			<key>propertyName</key>
+			<string>endColor</string>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>200</integer>
+				<integer>200</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+	</array>
+	<key>spriteFrameDrop</key>
+	<dict>
+		<key>className</key>
+		<string>PCSprite</string>
+		<key>property</key>
+		<string>spriteFrame</string>
+	</dict>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Gradient Layer</string>
+			<key>name</key>
+			<string>CCNodeGradient</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array/>
+			<key>default</key>
+			<array>
+				<real>0.21</real>
+				<real>0.65</real>
+				<real>0.87</real>
+				<integer>1</integer>
+			</array>
+			<key>displayName</key>
+			<string>Start color</string>
+			<key>type</key>
+			<string>Color3</string>
+			<key>name</key>
+			<string>startColor</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array/>
+			<key>default</key>
+			<array>
+				<real>0.13</real>
+				<real>0.5</real>
+				<real>0.8</real>
+				<integer>1</integer>
+			</array>
+			<key>displayName</key>
+			<string>End color</string>
+			<key>type</key>
+			<string>Color3</string>
+			<key>name</key>
+			<string>endColor</string>
+			<key>scriptingInfo</key>
+			<dict/>
+		</dict>
+	</array>
+</dict>
+</plist>

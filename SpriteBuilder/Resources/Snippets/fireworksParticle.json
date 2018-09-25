@@ -1,0 +1,5 @@
+{
+    "title" : "Particles - Fire",
+    "description" : "Adds a particle emitter that takes attributes from the 'Fire' template.",
+    "code" : "var fire = createInstanceOfClass('ParticleSystem');\nfire.applyTemplateNamed('Fire');\nfire.position = { x: 512.0, y: 384.0 };\nCard.addChild(fire);"
+}

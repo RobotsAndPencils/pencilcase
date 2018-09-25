@@ -1,0 +1,5 @@
+{
+    "title" : "Slider - Set Value",
+    "description" : "Set the currentValue of a slider.",
+    "code" : "MySlider.currentValue = 20;"
+}

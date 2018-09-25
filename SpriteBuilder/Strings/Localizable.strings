@@ -1,0 +1,88 @@
+/****************************************************************************/
+/* Localization file */
+
+// Action Names
+"GoToSlide" = "Go To Card";
+"FireEvent" = "Fire Event";
+"RunJavaScript" = "Run JavaScript";
+"PlayTimeline" = "Play Timeline";
+"Apply Force" = "Apply Force";
+"On/Off" = "On/Off";
+"ChangeMultiViewFocus" = "Change Multi View Focus";
+"WebViewNavigation" = "WebView Navigation";
+"ChangeProperty" = "Change Property";
+
+// Go To Card Parameters
+"NextSlide" = "Next Card";
+"PreviousSlide" = "Previous Card";
+"FirstSlide" = "First Card";
+"LastSlide" = "Last Card";
+"SlideListIndexFormat" = "Card %d";
+
+// Collision Event
+"Any" = "Any";
+
+// MultiView Cell Focus Parameters
+"NextCell" = "Next View";
+"PreviousCell" = "Previous View";
+"CellIndexFormat" = "View %@";
+
+// Loading projects
+"LoadProjectGenericErrorTitle" = "Error loading project";
+"LoadProjectUnsupportedTypeErrorTitle" = "Unsupported project type";
+"LoadProjectUnsupportedVersionErrorTitle" = "Unsupported project version";
+"LoadProjectUnsupportedTypeLocalizedErrorDescriptionFormat" = "The project you're attempting to load had the wrong project type. It might not be the right type of file for PencilCase, or there might be something wrong with it.";
+"LoadProjectUnsupportedVersionLocalizedErrorDescriptionFormat" = "The project file version you're attempting to load requires a newer version of PencilCase. Please check for updates.";
+"InvalidProjectError" = "Failed to open the project. File may be missing or invalid.";
+
+//Misc errors
+"CreateDirectoryNameCollisionError" = "A directory with this name already exists.";
+"DiskIOError" = "There was a problem writing to your hard drive. Please make sure you have free space on your computer, and try again.";
+
+// Xcode Required Error
+"XcodeRequiredErrorTitle" = "Xcode is required to run your Creation in the simulator.";
+"XcodeRequiredErrorDescription" = "You don't currently have Xcode installed. Download it for free from the Mac App Store.";
+"XcodeLinkButtonTitle" = "Download Xcode";
+
+// Communication error
+"InvalidLoginError" = "Invalid username or password.";
+"Unauthorized" = "Access denied.";
+"RateLimitExceeded" = "Time to slow down. You're being rate-limited!";
+"RateLimitExceededRecovery" = "We know it's exciting to share your creations, but in order for us to control abuse, we limit how often our creators can share.\n\nThink we're too strict? Send an email to pencilcase@robotsandpencils.com";
+"AccountSuspended" = "Hold Up!";
+"AccountSuspendedRecovery" = "It appears you've violated our terms of use. We've suspended your account.\n\nThink we're too strict? Send an email to pencilcase@robotsandpencils.com";
+"ClientTooOld" = "Time to update";
+"ClientTooOldRecovery" = "Your version of PencilCase is too old, and we no longer support it. Better get the latest version.";
+"ClientTooOldRecoveryAction" = "Update now";
+"GenericNetworkError" = "Unable to communicate with server.";
+"GenericNetworkErrorRecovery" = "Please check your internet and try again.";
+
+// Publishing
+"PublishFileFormat" = "Publishing %@...";
+
+// PCTouchStatement
+"PCTouchStatementTouchStateBegan" = "starts";
+"PCTouchStatementTouchStateChanges" = "changes";
+"PCTouchStatementTouchStateEnds" = "ends";
+
+//Missing Resources - These appear in popups when the user has selected a resource that no longer exists.
+"PCNo3DModel" = "No 3D Model";
+"PCNoAudio" = "No Audio";
+"PCNoImage" = "No Image";
+"PCNoFont" = "No Font";
+"PCNoVideo" = "No Video";
+
+//UI - Templates Tab
+"TemplatesTabNoSelection" = "No Selection";
+"TemplatesTabUnsupportedSelectionTitle" = "No Templates";
+"TemplatesTabUnsupportedSelectionMessage" = "Templates are only currently available for particles. More templates will be available soon.";
+
+//UI - Physics Tab
+"PhysicsTabNoSelection" = "No Selection";
+"PhysicsTabInvalidSelectionTitle" = "No Physics";
+"PhysicsTabInvalidSelectionMessage" = "Selection cannot participate in physics.";
+
+//Behaviours - Video Player State
+"PlayingVideoPlayerState" = "Playing";
+"PausedVideoPlayerState" = "Paused";
+"FinishedVideoPlayerState" = "Finished";

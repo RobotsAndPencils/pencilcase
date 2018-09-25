@@ -1,0 +1,5 @@
+{
+    "title" : "Multi View - Previous View",
+    "description" : "Focuses the previous view in the Multi View",
+    "code" : "MyMultiView.previousView();"
+}

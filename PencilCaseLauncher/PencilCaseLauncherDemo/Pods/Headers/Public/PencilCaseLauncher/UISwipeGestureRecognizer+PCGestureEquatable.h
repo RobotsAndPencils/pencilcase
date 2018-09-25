@@ -1,0 +1,1 @@
+../../../../../Source/Runtime/Categories/UIKit/UISwipeGestureRecognizer+PCGestureEquatable.h

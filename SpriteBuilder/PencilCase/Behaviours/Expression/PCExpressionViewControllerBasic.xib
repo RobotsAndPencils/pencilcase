@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCExpressionViewController">
+            <connections>
+                <outlet property="simpleInspectorContainer" destination="uFI-Uy-GcX" id="GWu-Rw-Vds"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yu0-h9-RlG">
+                    <rect key="frame" x="193" y="2" width="71" height="32"/>
+                    <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sec-wD-mIC">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="save:" target="-2" id="x7p-Jo-TsT"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hl5-Wd-90d">
+                    <rect key="frame" x="14" y="2" width="83" height="32"/>
+                    <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3hx-1r-nL3">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancel:" target="-2" id="T2o-D1-e4t"/>
+                    </connections>
+                </button>
+                <tabView type="noTabsBezelBorder" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-mR-0rM">
+                    <rect key="frame" x="9" y="39" width="260" height="45"/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="Tab" identifier="1" id="bo7-dh-1Yz">
+                            <view key="view" id="QK7-Gz-YE4">
+                                <rect key="frame" x="10" y="7" width="240" height="25"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="uFI-Uy-GcX">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="25"/>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uFI-Uy-GcX" firstAttribute="leading" secondItem="QK7-Gz-YE4" secondAttribute="leading" id="DC6-cd-4qL"/>
+                                    <constraint firstAttribute="bottom" secondItem="uFI-Uy-GcX" secondAttribute="bottom" id="EJa-Nc-xLm"/>
+                                    <constraint firstAttribute="trailing" secondItem="uFI-Uy-GcX" secondAttribute="trailing" id="V6b-ZN-0bg"/>
+                                    <constraint firstItem="uFI-Uy-GcX" firstAttribute="top" secondItem="QK7-Gz-YE4" secondAttribute="top" id="mhm-Ft-ATZ"/>
+                                </constraints>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                </tabView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yu0-h9-RlG" secondAttribute="bottom" constant="9" id="D9g-5d-t1a"/>
+                <constraint firstAttribute="trailing" secondItem="fB7-mR-0rM" secondAttribute="trailing" constant="13" id="ILd-rF-OU3"/>
+                <constraint firstAttribute="bottom" secondItem="Hl5-Wd-90d" secondAttribute="bottom" constant="9" id="UFL-rE-TRr"/>
+                <constraint firstAttribute="trailing" secondItem="yu0-h9-RlG" secondAttribute="trailing" constant="20" id="Zvh-WJ-6Bt"/>
+                <constraint firstItem="fB7-mR-0rM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="13" id="fbZ-oD-nCP"/>
+                <constraint firstItem="Hl5-Wd-90d" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="pdT-g2-iua"/>
+                <constraint firstItem="fB7-mR-0rM" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="13" id="t3c-AX-6J4"/>
+                <constraint firstItem="Hl5-Wd-90d" firstAttribute="top" secondItem="fB7-mR-0rM" secondAttribute="bottom" constant="13" id="wPU-DV-EPv"/>
+            </constraints>
+            <point key="canvasLocation" x="499" y="147.5"/>
+        </customView>
+    </objects>
+</document>

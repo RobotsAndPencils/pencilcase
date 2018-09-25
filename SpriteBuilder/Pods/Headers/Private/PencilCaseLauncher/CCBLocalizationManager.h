@@ -1,0 +1,1 @@
+../../../../../PencilCaseLauncher/Source/CocosBuilder/CCBLocalizationManager.h
